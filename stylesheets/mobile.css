@@ -1,0 +1,43 @@
+/* CSS for mobile devices */
+
+@media screen and (min-width: 375px) {
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Poppins";
+    font-style: normal;
+  }
+   
+  .nav-container {
+    height: 48px;
+    /*background: rgb(255, 221, 127);*/
+  }
+
+  .wrapper {
+    max-width: 768px;
+    padding: 24px;
+    margin: 0 auto;
+  }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav .logo {
+  width: 76px;
+  height: 20px;
+  line-height: 20px;
+
+}
+
