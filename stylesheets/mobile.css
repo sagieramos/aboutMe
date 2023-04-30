@@ -10,7 +10,7 @@
     min-width: 375px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    max-width: 87.2vw; 
+    max-width: 480px; 
     margin: 0 auto;
     height: 674px;
   }
@@ -21,8 +21,9 @@
   }
 
   .wrapper {
-    max-width: 87.2%;
+    max-width: 480px; 
     margin: 0 auto;
+    width: 87.2vw;
     /* padding-left: 12%;
     padding-right: 12%; */
   }

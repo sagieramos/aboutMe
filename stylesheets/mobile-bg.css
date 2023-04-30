@@ -34,4 +34,27 @@
     left: 2px;
   }
 
+/* .bgC {
+  position: absolute;
+  top: 85px;
+  right: 0px;
+} */
 
+.bgC {
+  position: absolute;
+width: 95.58px;
+height: 22.02px;
+right: -10px;
+top: 98.5px;
+
+/* Primary/B50 */
+
+background: #EBEBFF;
+transform: rotate(-30deg);
+}
+
+.bgC1 {
+  position: absolute;
+  top: 108.24px;
+  right: 0;
+}
