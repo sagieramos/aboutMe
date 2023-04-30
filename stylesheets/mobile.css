@@ -1,5 +1,5 @@
 /* CSS for mobile devices */
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 @media screen and (min-width: 375px) {
 
   * {
@@ -7,8 +7,12 @@
   }
 
   body {
-    font-family: "Poppins";
+    min-width: 375px;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
+    max-width: 87.2vw; 
+    margin: 0 auto;
+    height: 674px;
   }
    
   .nav-container {
@@ -17,9 +21,10 @@
   }
 
   .wrapper {
-    max-width: 768px;
-    padding: 24px;
+    max-width: 87.2%;
     margin: 0 auto;
+    /* padding-left: 12%;
+    padding-right: 12%; */
   }
 }
 
@@ -28,16 +33,45 @@ nav {
   align-items: center;
   justify-content: space-between;
   height: 48px;
-}
-
-nav ul {
-  display: flex;
+  
 }
 
 nav .logo {
-  width: 76px;
-  height: 20px;
-  line-height: 20px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #6070FF;
+}
 
+header {
+  /* padding-top: calc(162px); */
+  padding-top: 114px;
+}
+
+header .content h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  color: #172B4D;
+}
+
+header .content p:first-of-type {
+  color: #344563;
+  font-weight: 800;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+header .content p:last-of-type {
+  color: #7F8CFF;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  bottom: 18.88%;
 }
 
