@@ -1,58 +1,51 @@
-.bg{
+.bg {
   z-index: -1;
 }
+
 .bgA {
-    position: absolute;
-    top: 60px;
-    left: 0%;
-    /* background-image: url('./images/background/1/Rectangle6.svg'); */
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  position: absolute;
+  top: 60px;
+  left: 0%;
 
-  .bgA img:nth-child(2) {
-    position: absolute;
-    left: 0%;
-    bottom: 0px;
-
-  }
-
-
-.bgB {
-    position: absolute;
-    left: 36.7%;
-    width: 24px;
-    height: 21px;
-    top: 104px;
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* background-image: url('./images/background/1/Rectangle6.svg'); */
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+.bgA img:nth-child(2) {
+  position: absolute;
+  left: 0%;
+  bottom: 0;
+}
+
+.bgB {
+  position: absolute;
+  left: 36.7%;
+  width: 24px;
+  height: 21px;
+  top: 104px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /* elipse */
 .bgB img:nth-child(2) {
-    position: absolute;
-    top: 9px;
-    left: 1px;
-  }
-
-/* .bgC {
   position: absolute;
-  top: 85px;
-  right: 0px;
-} */
+  top: 9px;
+  left: 1px;
+}
 
 .bgC {
   position: absolute;
-width: 95.58px;
-height: 22.02px;
-right: -10px;
-top: 98.5px;
+  width: 95.58px;
+  height: 22.02px;
+  right: -10px;
+  top: 98.5px;
 
-/* Primary/B50 */
+  /* Primary/B50 */
 
-background: #EBEBFF;
-transform: rotate(-30deg);
+  background: #ebebff;
+  transform: rotate(-30deg);
 }
 
 .bgC1 {
@@ -63,43 +56,39 @@ transform: rotate(-30deg);
 
 .bgD {
   border-radius: 50%;
-position: absolute;
-width: 11px;
-height: 11px;
-left: 79.47%;
-top: 271px;
-background: #FFFFFF;
-border: 1px solid #CBCDFF;
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  left: 79.47%;
+  top: 271px;
+  background: #fff;
+  border: 1px solid #cbcdff;
 }
 
 .bgE {
   position: absolute;
-right: 33.24px;
-top: 502.69px;
+  right: 33.24px;
+  top: 502.69px;
 }
 
 .bgE1 {
   position: absolute;
-  border-radius: 50px 50px 0 0;width: 30.1px;
-right: 60px;
-top: 519px;
+  border-radius: 50px 50px 0 0;
+  width: 30.1px;
+  right: 60px;
+  top: 519px;
 }
 
 .bgF {
   box-sizing: border-box;
   border-radius: 50%;
-position: absolute;
-width: 15px;
-height: 15px;
-left: 53px;
-top: 601px;
-
-/* Neutrals/N0 */
-
-background: #FFFFFF;
-/* Primary/B100 */
-
-border: 1px solid #CBCDFF;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 53px;
+  top: 601px;
+  background: #fff;
+  border: 1px solid #cbcdff;
 }
 
 .bgG {
@@ -113,28 +102,18 @@ border: 1px solid #CBCDFF;
 .bgG div:first-child {
   position: absolute;
   border-radius: 50%;
-width: 20px;
-height: 20px;
-right: 0px;
-bottom: 3px;
-/* left: 63.2%;
-top: 613.1px; */
-
-/* Primary/B400 */
-
-background: #6070FF;
+  width: 20px;
+  height: 20px;
+  right: 0;
+  bottom: 3px;
+  background: #6070ff;
 }
 
 .bgG div:last-child {
   position: absolute;
-width: 68.06px;
-height: 12.18px;
-bottom: 0px;
-/* left: 51.152%;
-top: 609px; */
-
-/* Primary/B50 */
-
-background: #EBEBFF;
-transform: rotate(23.34deg);
+  width: 68.06px;
+  height: 12.18px;
+  bottom: 0;
+  background: #ebebff;
+  transform: rotate(23.34deg);
 }
