@@ -1,4 +1,6 @@
-
+.bg{
+  z-index: -1;
+}
 .bgA {
     position: absolute;
     top: 60px;
@@ -30,8 +32,8 @@
 /* elipse */
 .bgB img:nth-child(2) {
     position: absolute;
-    top: 10px;
-    left: 2px;
+    top: 9px;
+    left: 1px;
   }
 
 /* .bgC {
@@ -57,4 +59,82 @@ transform: rotate(-30deg);
   position: absolute;
   top: 108.24px;
   right: 0;
+}
+
+.bgD {
+  border-radius: 50%;
+position: absolute;
+width: 11px;
+height: 11px;
+left: 79.47%;
+top: 271px;
+background: #FFFFFF;
+border: 1px solid #CBCDFF;
+}
+
+.bgE {
+  position: absolute;
+right: 33.24px;
+top: 502.69px;
+}
+
+.bgE1 {
+  position: absolute;
+  border-radius: 50px 50px 0 0;width: 30.1px;
+right: 60px;
+top: 519px;
+}
+
+.bgF {
+  box-sizing: border-box;
+  border-radius: 50%;
+position: absolute;
+width: 15px;
+height: 15px;
+left: 53px;
+top: 601px;
+
+/* Neutrals/N0 */
+
+background: #FFFFFF;
+/* Primary/B100 */
+
+border: 1px solid #CBCDFF;
+}
+
+.bgG {
+  position: absolute;
+  width: 69px;
+  height: 60px;
+  left: 51.152%;
+  top: 613px;
+}
+
+.bgG div:first-child {
+  position: absolute;
+  border-radius: 50%;
+width: 20px;
+height: 20px;
+right: 0px;
+bottom: 3px;
+/* left: 63.2%;
+top: 613.1px; */
+
+/* Primary/B400 */
+
+background: #6070FF;
+}
+
+.bgG div:last-child {
+  position: absolute;
+width: 68.06px;
+height: 12.18px;
+bottom: 0px;
+/* left: 51.152%;
+top: 609px; */
+
+/* Primary/B50 */
+
+background: #EBEBFF;
+transform: rotate(23.34deg);
 }
