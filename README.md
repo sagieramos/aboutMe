@@ -30,7 +30,7 @@ After you're finished please remove all the comments and instructions!
   <img src="imuwahen_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Hello Microverse</b></h3>
+  <h3><b>Portfolio</b></h3>
 
 </div>
 
@@ -57,8 +57,7 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 Fullstack development <a name="about-project"></a>
 
-**Hello-world** is a simple HTML and CSS project that display: 
-## $${\color{red}Hello \space microverse}$$
+**Portforlio** is a simple HTML and CSS project that shows about me: 
 
 ## 🛠  Built With <a name="built-with"></a>
 
@@ -66,7 +65,7 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-- **Display "Hello microverse" in browser**
+- **About me**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -93,14 +92,14 @@ Example command:
 
 Clone this repository to your desired folder:
 ```sh
-  git clone https://github.com/sagieramos/Hello-world $HOME/Hello-world
+  git clone https://github.com/sagieramos/aboutMe $HOME/aboutMe
 ```
 ### Usage
 
 To run the project, execute the following command:
 
 ```sh
-  open $HOME/Hello-world/index.html
+  open $HOME/aboutMe/index.html
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -117,7 +116,7 @@ To run the project, execute the following command:
 <!-- FUTURE FEATURES -->
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Responsive web display**
+- [ ] **Add web games**
 - [ ] **Database**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
