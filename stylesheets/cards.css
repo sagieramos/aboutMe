@@ -1,160 +1,151 @@
 .work {
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 114px 24px;
-gap: 88px;
-width: 375px;
-height: 2788px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 114px 24px;
+  gap: 88px;
+  width: 375px;
+  height: 2788px;
 }
 
 .work-container {
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 16px;
-gap: 12px;
-height: 552px;
-background: #FFFFFF;
-border: 1px solid #DFE1E6;
-border-radius: 16px;
-flex: none;
-order: 0;
-flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  gap: 12px;
+  height: 552px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .card-img {
-border-radius: 8px;
+  border-radius: 8px;
 }
 
 .content-container {
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-justify-content: space-between;
-width: 295px;
-height: 288px;
-
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  justify-content: space-between;
+  width: 295px;
+  height: 288px;
 }
 
 .title {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 12px;
-    width: 295px;
-    height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 12px;
+  width: 295px;
+  height: 80px;
 }
 
 .title h2 {
-font-weight: 700;
-font-size: 32px;
-line-height: 44px;
-width: 295px;
-height: 36px;
-flex: none;
-order: 0;
-flex-grow: 0;
-
-color: #172B4D;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  width: 295px;
+  height: 36px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  color: #172b4d;
 }
 
-.title ul{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px;
-    gap: 12px;
-    width: 236px;
-    height: 32px;
+.title ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  gap: 12px;
+  width: 236px;
+  height: 32px;
 }
 
 .title ul li:first-child {
-    list-style-type: none;
-    font-weight: 600;
-font-size: 13px;
-line-height: 16px;
-
-color: #344563;
+  list-style-type: none;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
 }
 
-.title ul li:nth-child(2), .title ul li:nth-child(3) {
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 13px;
-line-height: 16px;
-color: #7A869A;
+.title ul li:nth-child(2),
+.title ul li:nth-child(3) {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
 }
 
 .dist {
-font-weight: 400;
-font-size: 15px;
-line-height: 24px;
-color: #344563;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
 }
 
 .tags {
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-gap: 8px;
-width: 214px;
-height: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 8px;
+  width: 214px;
+  height: 24px;
 }
 
 .tags p {
-align-items: center;
-padding: 4px 12px;
-height: 24px;
-border-radius: 8px;
-border: 0rem;
-font-weight: 500;
-font-size: 12px;
-line-height: 16px;
-letter-spacing: 0.03em;
-color: #6070FF;
-background: #EBEBFF;
+  align-items: center;
+  padding: 4px 12px;
+  height: 24px;
+  border-radius: 8px;
+  border: 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  background: #ebebff;
 }
 
 .btn {
+  /* Auto layout */
 
-/* Auto layout */
-
-
-padding: 12px;
-gap: 10px;
-
-width: 126px;
-height: 48px;
-
-border: 1px solid #6070FF;
-border-radius: 8px;
-background-color: #FFF;
-font-weight: 500;
-font-size: 17px;
-line-height: 24px;
-
+  padding: 12px;
+  gap: 10px;
+  width: 126px;
+  height: 48px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  background-color: #fff;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
 }
 
 .ext {
-width: 295px;
-height: 72px;
-display: flex;
-gap: 12px;
-
+  width: 295px;
+  height: 72px;
+  display: flex;
+  gap: 12px;
 }
 
 .ext p {
-    margin: auto 0;
+  margin: auto 0;
 }
+
 .work-container a {
-    text-decoration: none;
-    color: #396DF2;
+  text-decoration: none;
+  color: #396df2;
 }
