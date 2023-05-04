@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./stylesheets/common.css">
     <link rel="stylesheet" href="./stylesheets/mobile.css">
     <link rel="stylesheet" href="./stylesheets/cards.css">
+    <link rel="stylesheet" href="./stylesheets/shower.css">
     <title>Portfolio</title>
 </head>
 <body>
@@ -23,23 +24,25 @@
                 <li class="drop"><a href="#"></a></li>
             </ul>
         </nav>
+        <div class="bg"></div>
     </header>
 
         <!-- Homepage intro section -->
 
     <main>
+        <div class="bg"></div>
 
         <section class="hero">
             <!-- <div class="hero-intro-container"> -->
                 <h1>I’m Stanley Glad to see you!</h1>
-                <p>
+                <p class="content">
                     I’m a software developer! I can help you build a product , feature
                     or website Look through some of my work and experience! If you
                     like what you see and have a project you need coded, don’t
                     hestiate to contact me.
                 </p>
-                <h3>LET’S CONNECT</h3>
-                <ul class="social-icons">
+                <h3 class="let_connect">LET’S CONNECT</h3>
+                <ul class="social-icons social-icons1">
                     <li>
                         <a href="#"><img src="./assets/social/twitter.svg" alt="Twitter"></a>
                     </li>
@@ -56,7 +59,7 @@
                         <a href="#"><img src="./assets/social/angellist.svg" alt="AngelList"></a>
                     </li>
                 </ul>
-            <!-- </div> -->
+
         </section>
 
 
@@ -186,9 +189,90 @@
 
         <!-- About Myself -->
 
-        <section class="aboutMe">
+        <section class="aboutme">
+            <section class="aboutme-header">
+                <h1>About Myself</h1>
+                <p>
+                    Hello I’m a software developer! I can help you build a 
+                    product, feature or website. Look through some of my 
+                    work and experience! If you like what you see and have 
+                    a project you need coded, don’t hesitate to contact me.
+                </p>
+                <section class="letcon">
+                    <h3 class="let_connect">LET’S CONNECT</h3>
+                    <ul class="social-icons">
+                        <li>
+                            <a href="#"><img src="./assets/social/twitter.svg" alt="Twitter"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./assets/social/Linkedin.svg" alt="Linkedin"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./assets/social/medium.svg" alt="Meduim"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./assets/social/github.svg" alt="Github"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./assets/social/angellist.svg" alt="AngelList"></a>
+                        </li>
+                    </ul>
+                </section>
+
+                <div class="btn"><a href="#">Get resume</a></div>
+
+            </section>
+
+            <section class="lang-container">
+
+                <section class="lang-title">
+                    <div class="h3-container"><h3>Languages</h3></div>
+                    <section class="lang-group">
+                        <div class="lang">
+                            <img src="./assets/JS.svg" alt="JS">
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="lang">
+                            <img src="./assets/HTML.svg" alt="HTML">
+                            <p>HTML</p>
+                        </div>
+                        <div class="lang">
+                            <img src="./assets/CSS.svg" alt="">
+                            <p>CSS</p>
+                        </div>
+                    </section>
+                </section>
+                  
+            </section>
+
+            <div class="selt">
+                <h3>Framework</h3>
+                <img src="" alt="">
+            </div>
+
+            <div class="selt">
+                <h3>Skills</h3>
+                <img src="" alt="">
+            </div>
 
         </section>
+
+        <section class="contactme">
+            <h3>Contact me</h3>
+            <p>
+                If you have an application you are interested in 
+                developing, a feature that you need built or a 
+                project that needs coding. I’d love to help with it!
+            </p>
+
+            <div class="user-data">
+                <input type="text" name="full_name" placeholder="Lorem Ipsum" required>
+                <input type="text" name="email" placeholder="loremipsum@gmail.com" required>
+                <input type="text" name="msg" placeholder="Write your message here..." required>
+            </div>
+        </section>
+
+
     </main>
 
 </body>

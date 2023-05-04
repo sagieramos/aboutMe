@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 
+html {
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
 }
@@ -17,23 +21,22 @@ body {
   font-style: normal;
   margin: 0 auto;
   padding: 0;
-  width: 375px;
+  max-width: 760px;
+  min-width: 375px;
 }
 
 main {
   background: #fff;
-  width: 375px;
-  padding: 0 0;
+  width: 100%;
 }
 
 header {
   display: flex;
-  gap: 20px;
   justify-content: space-between;
   align-items: center;
   padding-left: 22px;
   padding-right: 22px;
-  width: 375px;
+  width: 100%;
   height: 48px;
 }
 
@@ -70,3 +73,12 @@ header p:first-child {
   border-radius: 8px;
   list-style-type: none;
 }
+
+/* .bg {
+  top: 0;
+  position: absolute;
+  height: 630px;
+  background-color: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 0 0 88px 0;
+} */

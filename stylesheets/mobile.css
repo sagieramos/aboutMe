@@ -8,7 +8,11 @@
   height: 604px;
   background-image: url(../assets/header-shapes-mobile.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; 
+  background-color: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 0 0 0 88px; 
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.10);
 }
 
 .hero h1 {
@@ -21,7 +25,7 @@
   padding-top: 2.5em;
 }
 
-.hero p {
+.content {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -29,7 +33,7 @@
   text-align: left;
 }
 
-.hero h3 {
+.let_connect {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -45,5 +49,8 @@
   gap: 1.5em;
   cursor: pointer;
   list-style-type: none;
+}
+
+.social-icons1 {
   padding-bottom: 5rem;
 }
