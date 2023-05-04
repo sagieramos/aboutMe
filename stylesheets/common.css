@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
 a {
   text-decoration: none;
 }
+
 *,
 *::before,
 *::after {
@@ -33,38 +35,38 @@ header {
   padding-right: 22px;
   width: 375px;
   height: 48px;
-  }
+}
 
-  header a {
-    text-decoration: none;
-  }
+header a {
+  text-decoration: none;
+}
 
-  header p:first-child {
-    font-weight: 700;
+header p:first-child {
+  font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   display: flex;
   align-items: center;
   text-align: center;
   text-decoration-color: #6070ff;
-  }
-  
-  .logo {
-    color: #6070ff;
-  }
-  
-  .hamburger {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    padding-right: 0.2em;
-    cursor: pointer;
-  }
-  
-  .hamburger li {
-    width: 20px;
-    height: 3px;
-    background-color: #6070ff;
-    border-radius: 8px;
-    list-style-type: none;
-  }
+}
+
+.logo {
+  color: #6070ff;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-right: 0.2em;
+  cursor: pointer;
+}
+
+.hamburger li {
+  width: 20px;
+  height: 3px;
+  background-color: #6070ff;
+  border-radius: 8px;
+  list-style-type: none;
+}
