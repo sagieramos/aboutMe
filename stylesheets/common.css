@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
-
+a {
+  text-decoration: none;
+}
 *,
 *::before,
 *::after {
@@ -9,9 +11,60 @@
 }
 
 body {
-  background: #f7f7f9;
-  height: auto;
-  max-width: 414px;
-  min-width: 375px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
   margin: 0 auto;
+  padding: 0;
+  width: 375px;
 }
+
+main {
+  background: #fff;
+  width: 375px;
+  padding: 0 0;
+}
+
+header {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 22px;
+  padding-right: 22px;
+  width: 375px;
+  height: 48px;
+  }
+
+  header a {
+    text-decoration: none;
+  }
+
+  header p:first-child {
+    font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration-color: #6070ff;
+  }
+  
+  .logo {
+    color: #6070ff;
+  }
+  
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-right: 0.2em;
+    cursor: pointer;
+  }
+  
+  .hamburger li {
+    width: 20px;
+    height: 3px;
+    background-color: #6070ff;
+    border-radius: 8px;
+    list-style-type: none;
+  }

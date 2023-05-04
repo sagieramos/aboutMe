@@ -1,97 +1,41 @@
+
+
 .hero {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  background: #fff;
-  border-bottom-left-radius: 100px;
-  padding-bottom: 30px;
-  width: 375px;
-}
-
-.header-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  color: #6070ff;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  margin: 1em auto;
-  margin-top: 0;
-  padding-top: 16px;
-}
-
-.hamburger {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  padding-right: 0.2em;
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
-}
-
-.drop {
-  width: 20px;
-  height: 3px;
-  background-color: #6070ff;
-  border-radius: 8px;
-  list-style-type: none;
-}
-
-.hero-intro {
-  width: 100%;
-  height: auto;
-  background-image: url("../assets/header-shapes-mobile.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   justify-content: center;
+flex-direction: column;
+align-items: flex-start;
+padding: 114px 24px;
+gap: 12px;
+height: 604px;
+background-image: url(../assets/header-shapes-mobile.svg);
+background-repeat: no-repeat;
+background-size: cover;
 }
 
-.hero-intro-container {
-  width: 90%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.hero-intro-container h1 {
+.hero h1 {
   font-weight: 700;
-  font-size: 3rem;
-  line-height: 52px;
-  width: 100%;
-  height: max-content;
-  color: #172b4d;
-  padding-top: 2.5em;
-  margin-bottom: 1rem;
+font-size: 40px;
+line-height: 52px;
+display: flex;
+align-items: center;
+color: #172B4D;
+padding-top: 2.5em;
 }
 
-.hero-intro-container p {
+.hero p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #344563;
   text-align: left;
-  margin-bottom: 1rem;
 }
 
-.hero-intro-container h3 {
+.hero h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
-  margin-bottom: 1rem;
   cursor: pointer;
   text-decoration: none;
 }
