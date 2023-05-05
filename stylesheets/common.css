@@ -43,10 +43,6 @@ header {
   height: 48px;
 }
 
-header a {
-  text-decoration: none;
-}
-
 header p:first-child {
   font-weight: 700;
   font-size: 18px;
