@@ -8,9 +8,9 @@
   height: 604px;
   background-image: url(../assets/header-shapes-mobile.svg);
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
   background-color: #fff;
-  border-radius: 0 0 0 88px; 
+  border-radius: 0 0 0 88px;
 }
 
 .hero h1 {
