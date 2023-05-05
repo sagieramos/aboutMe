@@ -1,13 +1,11 @@
 .aboutme {
-    display: flex;
-flex-direction: column;
+    display: grid;
 align-items: center;
 padding: 114px 24px;
 gap: 24px;   
 background-color: #fff;
-border: 1px solid #dfe1e6;
 border-radius: 0 88px 0 0; 
-box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.10);
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0.1, 0);
 }
 
 .aboutme-header {
@@ -40,16 +38,18 @@ gap: 16px;
 }
 
 .lang-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    display: grid;
+    flex-direction: row;
     padding: 0px;
+    width: 100%;
+    align-items: center;
 }
 
 .h3-container {
-    height: 72px;
-    display: flex;
-    align-items: center;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
 }
 
 .h3-container h3 {
@@ -57,22 +57,101 @@ gap: 16px;
     font-weight: 500;
 font-size: 20px;
 line-height: 24px;
+padding-left: 0;
 }
 
 .lang-group {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction:column;
+    align-items:flex-start;
     padding: 12px;
     gap: 12px;
+    width: 100%;
 }
 
 .lang {
+    background-position: 0 center;
+    background-repeat: no-repeat;
+
+    height: 66.72px;
     display: flex;
-    flex-direction: row;
-    gap: 20px;
     align-items: center;
+    border-radius: 8px;
+    background-color: #F7F7F9;
     width: 100%;
-    background: #F7F7F9;
-border-radius: 8px;
+}
+
+.js {
+    background-image: url(../assets/JS.svg);
+}
+
+.html {
+    background-image: url(../assets/HTML.svg);
+}
+
+.css {
+    background-image: url(../assets/CSS.svg);
+}
+
+.lang p {
+    padding-left: 70px;
+    width: 100%;
+}
+
+.about-frame {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+}
+
+.box {
+    height: 72px;
+    border-bottom: 1px solid #c6d2e7;
+    padding-right: 20px;
+}
+
+ion-icon {
+    color: #505F79;
+    font-size: larger;
+}
+
+.contactme {
+    background-color: #fff;
+}
+
+.contactme-container {
+    width: 100%;
+    height: 779px;
+    left: 0px;
+    top: 5410px;
+    background: #6070FF;
+    border-radius: 88px 0 0 0;
+    background-image: url(../assets/bg2.svg);
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactme-container h3 {
+    padding-top: 114px;
+    color: #fff;
+font-weight: 700;
+font-size: 40px;
+line-height: 52px;
+}
+
+.contactme-container p {
+    font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+/* or 140% */
+
+text-align: center;
+
+/* Primary/B50 */
+
+color: #EBEBFF;
 }

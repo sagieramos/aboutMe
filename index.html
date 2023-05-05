@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./stylesheets/mobile.css">
     <link rel="stylesheet" href="./stylesheets/cards.css">
     <link rel="stylesheet" href="./stylesheets/shower.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <title>Portfolio</title>
 </head>
 <body>
@@ -198,7 +200,7 @@
                     work and experience! If you like what you see and have 
                     a project you need coded, don’t hesitate to contact me.
                 </p>
-                <section class="letcon">
+                <div class="letcon">
                     <h3 class="let_connect">LET’S CONNECT</h3>
                     <ul class="social-icons">
                         <li>
@@ -217,62 +219,57 @@
                             <a href="#"><img src="./assets/social/angellist.svg" alt="AngelList"></a>
                         </li>
                     </ul>
-                </section>
-
+                </div>
                 <div class="btn"><a href="#">Get resume</a></div>
-
             </section>
+            <!-- ended -->
 
             <section class="lang-container">
 
-                <section class="lang-title">
-                    <div class="h3-container"><h3>Languages</h3></div>
-                    <section class="lang-group">
-                        <div class="lang">
-                            <img src="./assets/JS.svg" alt="JS">
+                <div class="lang-title">
+                    <div class="h3-container">
+                        <h3>Languages</h3>
+                        <a href="#"><img src="./assets/Disabled.svg" alt=""></a>
+                    </div>
+                    <sdiv class="lang-group">
+                        <div class="lang js">
                             <p>JavaScript</p>
                         </div>
-                        <div class="lang">
-                            <img src="./assets/HTML.svg" alt="HTML">
+                        <div class="lang html">
                             <p>HTML</p>
                         </div>
-                        <div class="lang">
-                            <img src="./assets/CSS.svg" alt="">
+                        <div class="lang css">
                             <p>CSS</p>
                         </div>
-                    </section>
-                </section>
-                  
+                    </div>
+                </div>
+                <div class="about-frame">
+                    <div class="h3-container box">
+                        <h3>Framework</h3>
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </div>
+    
+                    <div class="h3-container box">
+                        <h3>Skills</h3>
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </div>
+                </div>
             </section>
-
-            <div class="selt">
-                <h3>Framework</h3>
-                <img src="" alt="">
-            </div>
-
-            <div class="selt">
-                <h3>Skills</h3>
-                <img src="" alt="">
-            </div>
-
         </section>
 
         <section class="contactme">
-            <h3>Contact me</h3>
-            <p>
-                If you have an application you are interested in 
-                developing, a feature that you need built or a 
-                project that needs coding. I’d love to help with it!
-            </p>
-
-            <div class="user-data">
+            <div class="contactme-container">
+                <h3>Contact me</h3>
+                <p>
+                    If you have an application you are interested in 
+                    developing, a feature that you need built or a 
+                    project that needs coding. I’d love to help with it!
+                </p>
                 <input type="text" name="full_name" placeholder="Lorem Ipsum" required>
                 <input type="text" name="email" placeholder="loremipsum@gmail.com" required>
                 <input type="text" name="msg" placeholder="Write your message here..." required>
             </div>
         </section>
-
-
     </main>
 
 </body>

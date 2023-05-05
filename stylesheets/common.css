@@ -6,6 +6,9 @@ html {
 
 a {
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 *,
@@ -26,7 +29,7 @@ body {
 }
 
 main {
-  background: #fff;
+  background: #E5E5E5;
   width: 100%;
 }
 
