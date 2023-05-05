@@ -8,6 +8,10 @@
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0.1, 0);
 }
 
+.aboutme li {
+  list-style-type: none;
+}
+
 .aboutme-header {
   display: flex;
   flex-direction: column;
@@ -105,7 +109,7 @@
 }
 
 .lang p {
-  padding-left: 70px;
+  padding-left: 68px;
   width: 100%;
 }
 

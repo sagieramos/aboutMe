@@ -11,10 +11,6 @@ a {
   justify-content: center;
 }
 
-li {
-  list-style-type: none;
-}
-
 *,
 *::before,
 *::after {
@@ -76,12 +72,3 @@ header p:first-child {
   border-radius: 8px;
   list-style-type: none;
 }
-
-/* .bg {
-  top: 0;
-  position: absolute;
-  height: 630px;
-  background-color: #fff;
-  border: 1px solid #dfe1e6;
-  border-radius: 0 0 88px 0;
-} */
