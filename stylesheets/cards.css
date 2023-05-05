@@ -92,7 +92,7 @@
   list-style-type: none;
 }
 
-.tags p {
+.tags li {
   align-items: center;
   padding: 4px 12px;
   height: 24px;
@@ -109,7 +109,7 @@
   color: #6070ff;
 }
 
-.tags p a {
+.tags li a {
   color: #6070ff;
 }
 

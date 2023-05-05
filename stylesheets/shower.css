@@ -16,7 +16,7 @@
   width: 100%;
 }
 
-.aboutme-header h1 {
+.aboutme-header h2 {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -33,8 +33,20 @@
 .letcon {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: 16px;
+  width: 200px;
+}
+
+.social-icons2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  list-style-type: none;
+padding-left: 8px;
+padding-right: 8px;
+width: 100%;
+height: 40px;
 }
 
 .lang-container {
