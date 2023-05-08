@@ -97,12 +97,13 @@
 }
 
 .tags {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  float: left;
   padding: 0;
   gap: 8px;
   list-style-type: none;
+}
+.tags li{
+  display: inline-block;
 }
 
 .btn a {
