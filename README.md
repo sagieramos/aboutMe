@@ -3,7 +3,7 @@
 
 
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
+
   <img src="imuwahen_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
@@ -11,7 +11,6 @@
 
 </div>
 
-<!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
@@ -29,7 +28,6 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-<!-- PROJECT DESCRIPTION -->
 
 # 📖 Fullstack development <a name="about-project"></a>
 
@@ -37,7 +35,6 @@
 
 ## 🛠  Built With <a name="built-with"></a>
 
-<!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
@@ -45,7 +42,6 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -53,13 +49,6 @@
 
 In order to run this project you need:
 
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
 
 ### Setup
 
@@ -77,7 +66,6 @@ To run the project, execute the following command:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
 👤 **Stanley Osagie Ramos**
@@ -86,7 +74,7 @@ To run the project, execute the following command:
 - LinkedIn: [LinkedIn](https://linkedin.com/in/sagieramos)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
+
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **Add web games**
@@ -94,7 +82,7 @@ To run the project, execute the following command:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- CONTRIBUTING -->
+
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -104,7 +92,7 @@ Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- SUPPORT -->
+
 
 ## ⭐️ Show your support <a name="support"></a>
 
@@ -112,7 +100,6 @@ If you like this project, please consider subscribing to my GitHub account for u
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
@@ -120,7 +107,7 @@ I would like to thank Microverse for their invaluable support and contribution t
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LICENSE -->
+
 
 ## 📝 License <a name="license"></a>
 
