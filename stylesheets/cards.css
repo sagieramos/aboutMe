@@ -76,8 +76,6 @@
   line-height: 16px;
   color: #344563;
 }
-
-.copyright li:nth-child(2),
 .copyright li:nth-child(3) {
   font-weight: 600;
   font-size: 13px;
