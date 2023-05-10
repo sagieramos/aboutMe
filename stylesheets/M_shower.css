@@ -165,10 +165,6 @@
   padding-top: 10px;
 }
 
-*:focus {
-  outline: 0;
-}
-
 input {
   width: 100%;
   margin-top: 20px;
