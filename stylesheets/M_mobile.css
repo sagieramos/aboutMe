@@ -10,20 +10,6 @@ header {
   height: 48px;
 }
 
-header p:first-child {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  text-decoration-color: #6070ff;
-}
-
-.logo {
-  color: #6070ff;
-}
-
 .hamburger {
   display: flex;
   flex-direction: column;
