@@ -1,6 +1,6 @@
 .cards {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 142px;
     width: 100%;
     padding: 9.86%;
@@ -11,11 +11,9 @@
     display: inline-block;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
-    padding: 16px;
-    gap: 12px;
+    padding: 24px;
+    gap: 22px;
     max-width: 1156px;
-    height: 496px;
     background: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 24px;
@@ -28,3 +26,122 @@
     height: auto;
     padding: 0;
   }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 4px;
+    gap: 12px;
+    width: 100%;
+    padding: 24px;
+  }
+
+  .card-two > img,
+  .card-four > img {
+    order: 2;
+  }
+  .card-two > .card-container,
+  .card-four > .card-container {
+    order: 1;
+  }
+
+  /* ------------------------------------------------- */
+
+  .card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .card-header h2 {
+    font-size: 2em;
+    padding: 0;
+  }
+  
+  .copyright {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    gap: 30px;
+  }
+  
+  .tags li {
+    align-items: center;
+    padding: 4px 12px;
+    height: 24px;
+    border-radius: 8px;
+    border: 0;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    background: #ebebff;
+  }
+  
+  .copyright li:first-child {
+    list-style-type: none;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #344563;
+  }
+  
+  .copyright li:nth-child(2),
+  .copyright li:nth-child(3) {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #7a869a;
+  }
+  
+  .copyright li::marker {
+    font-size: large;
+  }
+  
+  .card-container p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #344563;
+  }
+  
+  .tags {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    list-style-type: none;
+  }
+  
+  .btn a {
+    color: #6070ff;
+  }
+  
+  .tags li a {
+    color: #6070ff;
+  }
+  
+  .btn-container {
+    margin-top: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    padding: 12px 12px;
+  }
+  
+  .btn:hover {
+    background-color: #ebebff;
+  }
+  

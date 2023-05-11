@@ -18,10 +18,10 @@ body {
   margin: 0 auto;
   padding: 0;
   min-width: 375px;
+  background: #e5e5e5;
 }
 
 main {
-  background: #e5e5e5;
   width: 100%;
 }
 

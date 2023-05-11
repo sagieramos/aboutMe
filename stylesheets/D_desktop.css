@@ -3,14 +3,14 @@
 }
 
 header {
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 13.76vw;
   padding-right: 13.76vw;
-  height: 72px;
+  height: 7.84vh;
   width: 100vw;
+  background-color: #fff;
 }
 
 .nav-link {
@@ -35,16 +35,27 @@ header {
 .hero {
   background-image: url(../assets/bg_desktop.svg);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
+  background-position-y: 30%;
   background-color: #fff;
   border-radius: 0 0 0 88px;
   padding: 20.1% 18.1%;
-  height: 846px;
+  height: 92.16vh;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
 }
 
 
-.hero h1 {
+.hero-container h1 {
   font-weight: 700;
   font-size: 48px;
   line-height: 60px;
@@ -52,7 +63,6 @@ header {
   align-items: center;
   color: #172b4d;
   width: 400px;
-  margin-bottom: 12px;
 }
 
 .content {
@@ -62,7 +72,7 @@ header {
   color: #344563;
   line-height: 28px;
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .let_connect {
@@ -72,7 +82,7 @@ header {
   color: #7f8cff;
   cursor: pointer;
   text-decoration: none;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .social-icons {

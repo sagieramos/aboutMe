@@ -30,7 +30,7 @@ header {
   display: none;
 }
 
-.hero {
+.hero-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -45,7 +45,7 @@ header {
   border-radius: 0 0 0 88px;
 }
 
-.hero h1 {
+.hero-container h1 {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
