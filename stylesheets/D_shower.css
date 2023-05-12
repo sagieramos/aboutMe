@@ -104,18 +104,10 @@
   border-bottom: 0.1px solid #dfe1e6;
 }
 
-.box > h3,
-.h3-container > li > h3 {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  color: #344563;
-}
-
-/* ....................................................................... */
-
 .contactme {
   background-color: #fff;
+  height: 100vh;
+  width: 100%;
 }
 
 .contactme-container {
@@ -126,12 +118,11 @@
   background-image: url(../assets/contact-form-bg.svg);
   background-repeat: no-repeat;
   background-position: center;
-  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap:10px;
+  gap: 12px;
 }
 
 .contactme-container > h3 {
@@ -148,14 +139,24 @@
   text-align: center;
   color: #ebebff;
   width: 569px;
+  margin-bottom: 14px;
+}
+
+.box > h3,
+.h3-container > li > h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #344563;
 }
 
 .form {
   display: flex;
-flex-direction: column;
-align-items: center;
-padding: 0px;
-gap: 27px;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  gap: 27px;
+  width: 447px;
 }
 
 input {
@@ -211,4 +212,3 @@ input[type=submit] {
   color: #6070ff;
   cursor: pointer;
 }
-

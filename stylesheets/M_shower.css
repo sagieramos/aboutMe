@@ -124,6 +124,10 @@
   padding-right: 24px;
 }
 
+.contactme-container > * {
+  max-width: 569px;
+}
+
 .contactme-container h3 {
   padding-top: 114px;
   color: #fff;
@@ -139,6 +143,11 @@
   text-align: center;
   color: #ebebff;
   padding-top: 10px;
+}
+
+.form {
+  /* max-width: 569px; */
+  max-width: 447px;
 }
 
 input {

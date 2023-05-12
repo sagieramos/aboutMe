@@ -83,3 +83,7 @@ header {
 .social-icons1 {
   padding-bottom: 5rem;
 }
+
+.d-img {
+  display: none;
+}

@@ -93,3 +93,7 @@ header {
   list-style-type: none;
   width: 170.17px;
 }
+
+.m-img {
+  display: none;
+}
