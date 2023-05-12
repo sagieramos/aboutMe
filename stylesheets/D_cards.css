@@ -130,16 +130,6 @@
     margin-top: 20px;
   }
   
-  .btn {
-    display: inline-block;
-    border: 1px solid #6070ff;
-    border-radius: 8px;
-    background-color: #fff;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 24px;
-    padding: 12px 12px;
-  }
   
   .btn:hover {
     background-color: #ebebff;
