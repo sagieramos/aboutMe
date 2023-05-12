@@ -43,6 +43,7 @@ header {
   background-size: cover;
   background-color: #fff;
   border-radius: 0 0 0 88px;
+  animation: openApp 0.3s ease-in-out;
 }
 
 .hero-container h1 {
