@@ -3,6 +3,7 @@
   border-radius: 0 88px 0 0;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0.1, 0);
 }
+
 .aboutme li {
   list-style-type: none;
 }
@@ -15,20 +16,18 @@
   justify-content: center;
   gap: 0;
   margin: auto auto;
-
 }
 
 .aboutme-header {
   margin-right: 24px;
-  width: 311px;
   margin-top: 166px;
   margin-bottom: 191px;
   display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 24px;
-width: 40.78%;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 24px;
+  width: 40.78%;
 }
 
 .aboutme-header h2 {
@@ -45,40 +44,39 @@ width: 40.78%;
   color: #344563;
 }
 
-
-
-
 .aboutme > ul {
   width: 684px;
   height: 360px;
   margin-top: 142px;
   margin-bottom: 166px;
   display: flex;
-flex-direction: column;
-padding: 0px;
+  flex-direction: column;
+  padding: 0;
 }
 
 .lang-class {
   display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .lang-group {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
-  gap: 12px; 
+  gap: 12px;
   padding: 12px;
   width: 414px;
   height: 144px;
 }
 
 .lang {
-  background: #F7F7F9;
-border-radius: 8px;
+  background: #f7f7f9;
+  border-radius: 8px;
 }
+
 .lang > img {
   margin-left: 12px;
   margin-top: 12px;
@@ -98,18 +96,18 @@ border-radius: 8px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  height: 72px;
 }
 
-.h3-container > li > h3,
-.box > h3 {
+.box {
+  height: 72px;
+  border-bottom: 0.1px solid #dfe1e6;
+}
+
+.box > h3,
+.h3-container > li > h3 {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   color: #344563;
 }
-
-.box {
-  height: 72px;
-  border-bottom: 0.1px solid #DFE1E6;
-}
-
