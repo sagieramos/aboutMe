@@ -43,6 +43,7 @@ header {
   background-size: cover;
   background-color: #fff;
   border-radius: 0 0 0 88px;
+  animation: openApp 0.3s ease-in-out;
 }
 
 .hero-container h1 {
@@ -87,4 +88,16 @@ header {
 
 .d-img {
   display: none;
+}
+
+@keyframes intro-animation {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
