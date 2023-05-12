@@ -4,13 +4,6 @@ html {
   overflow-x: hidden;
 }
 
-a {
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 *,
 *::before,
 *::after {
@@ -24,26 +17,27 @@ body {
   font-style: normal;
   margin: 0 auto;
   padding: 0;
-  max-width: 760px;
   min-width: 375px;
+  background: #e5e5e5;
 }
 
 main {
-  background: #e5e5e5;
   width: 100%;
 }
 
-header {
+*:focus {
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding-left: 22px;
-  padding-right: 22px;
-  width: 100%;
-  height: 48px;
+  justify-content: center;
 }
 
-header p:first-child {
+.logo {
+  color: #6070ff;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -53,22 +47,27 @@ header p:first-child {
   text-decoration-color: #6070ff;
 }
 
-.logo {
-  color: #6070ff;
-}
-
-.hamburger {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  padding-right: 0.2em;
-  cursor: pointer;
-}
-
-.hamburger li {
-  width: 20px;
-  height: 3px;
-  background-color: #6070ff;
+.btn {
+  display: inline-block;
+  border: 1px solid #6070ff;
   border-radius: 8px;
-  list-style-type: none;
+  background-color: #fff;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 12px 12px;
+  height: 48px;
+  letter-spacing: 0.03em;
+}
+
+.social-icons2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding-left: 8px;
+  padding-right: 8px;
+  height: 40px;
+  height: 48px;
+  width: 200px;
 }

@@ -1,0 +1,134 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 142px;
+  width: 100%;
+  padding: 9.86%;
+}
+
+.card {
+  box-sizing: border-box;
+  display: inline-block;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 24px;
+  gap: 24px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 24px;
+  margin: 0 auto;
+}
+
+.card img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  width: 100%;
+  padding: 24px;
+}
+
+.card-two > img,
+.card-four > img {
+  order: 2;
+}
+
+.card-two > .card-container,
+.card-four > .card-container {
+  order: 1;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.card-header > h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  gap: 30px;
+  height: 40px;
+}
+
+.tags li {
+  align-items: center;
+  padding: 4px 12px;
+  height: 24px;
+  border-radius: 8px;
+  border: 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  background: #ebebff;
+}
+
+.copyright li:first-child,
+.copyright li:nth-child(2) {
+  list-style-type: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.copyright li:not(:first-child):not(:nth-child(2)) {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #7a869a;
+}
+
+.copyright li::marker {
+  font-size: large;
+}
+
+.card-container p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 8px;
+  list-style-type: none;
+}
+
+.btn a {
+  color: #6070ff;
+}
+
+.tags li a {
+  color: #6070ff;
+}
+
+.btn-container {
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: #ebebff;
+}

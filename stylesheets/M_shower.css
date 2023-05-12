@@ -41,18 +41,6 @@
   width: 200px;
 }
 
-.social-icons2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  list-style-type: none;
-  padding-left: 8px;
-  padding-right: 8px;
-  width: 100%;
-  height: 40px;
-}
-
 .lang-container {
   display: grid;
   flex-direction: row;
@@ -96,20 +84,8 @@
   width: 100%;
 }
 
-.js {
-  background-image: url(../assets/JS.svg);
-}
-
-.html {
-  background-image: url(../assets/HTML.svg);
-}
-
-.css {
-  background-image: url(../assets/CSS.svg);
-}
-
 .lang p {
-  padding-left: 68px;
+  padding-left: 20px;
   width: 100%;
 }
 
@@ -148,6 +124,10 @@
   padding-right: 24px;
 }
 
+.contactme-container > * {
+  max-width: 569px;
+}
+
 .contactme-container h3 {
   padding-top: 114px;
   color: #fff;
@@ -165,8 +145,9 @@
   padding-top: 10px;
 }
 
-*:focus {
-  outline: 0;
+.form {
+  /* max-width: 569px; */
+  max-width: 447px;
 }
 
 input {
@@ -208,8 +189,7 @@ textarea {
 }
 
 #msg::placeholder {
-  position: absolute;
-  top: 15px;
+  float: top;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
