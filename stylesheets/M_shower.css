@@ -207,15 +207,3 @@ input[type=submit] {
   color: #6070ff;
   cursor: pointer;
 }
-
-@keyframes into-animation{
-  0%{
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-
-  100%{
-    tranform:translateY(0);
-    opacity: 1;
-  }
-}
