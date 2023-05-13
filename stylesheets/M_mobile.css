@@ -26,6 +26,37 @@ header {
   list-style-type: none;
 }
 
+.hamburger li:nth-child(3) {
+  animation-delay: 1s;
+  animation-name: introAnimation;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.hamburger li:nth-child(2) {
+  animation-delay: 1s;
+  animation-name: introAnimation;
+  animation-duration: 1.6s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.hamburger li:nth-child(1) {
+  animation-delay: 1s;
+  animation-name: introAnimation;
+  animation-duration: 3.2;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.logo {
+  animation-name: intro-animation;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
 .nav-link {
   display: none;
 }
@@ -43,7 +74,7 @@ header {
   background-size: cover;
   background-color: #fff;
   border-radius: 0 0 0 88px;
-  animation: openApp 0.3s ease-in-out;
+  animation: openApp 0.8s ease-in-out;
 }
 
 .hero-container h1 {
@@ -88,16 +119,4 @@ header {
 
 .d-img {
   display: none;
-}
-
-@keyframes intro-animation {
-  0% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
 }
