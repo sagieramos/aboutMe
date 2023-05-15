@@ -39,7 +39,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Different layout for Desktop and Mobile]**
+- **Different layout for Desktop and Mobile**
 - **Responsive webpage**
 - **Page animation**
 - **Submition form using formspree.io**
