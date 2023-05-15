@@ -17,6 +17,7 @@
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -39,11 +40,15 @@
 ### Key Features <a name="key-features"></a>
 
 - **[Different layout for Desktop and Mobile]**
-- **[Responsive webpage]**
-- **[Page animation]**
-- **[Submition form using formspree.io]**
+- **Responsive webpage**
+- **Page animation**
+- **Submition form using formspree.io**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://sagieramos.github.io)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
