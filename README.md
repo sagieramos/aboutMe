@@ -48,7 +48,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://sagieramos.github.io)
+- [Live Demo Link](https://sagieramos.github.io/aboutMe/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
