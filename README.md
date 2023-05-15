@@ -42,7 +42,7 @@
 - **Different layout for Desktop and Mobile**
 - **Responsive webpage**
 - **Page animation**
-- **Submition form using formspree.io**
+- **Submitting form using formspree.io**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
