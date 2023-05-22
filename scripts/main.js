@@ -28,6 +28,7 @@ function handleMenuOptionClick(event) {
     targetContent.classList.add('active');
     targetContent.scrollIntoView({ behavior: 'smooth' });
   }
+  hamburgerMenu.style.display = 'flex';
 }
 
 // Event Checker
