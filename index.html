@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="./stylesheets/common.css">
+    <link rel="stylesheet" href="./stylesheets/menu.css">
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 999px)" href="./stylesheets/M_mobile.css">
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 999px)" href="./stylesheets/M_cards.css">
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 999px)" href="./stylesheets/M_shower.css">
@@ -20,19 +21,29 @@
 
     <header>
         <p><a href="#" class="logo">StAnLEY</a></p>
-        <nav>
-            <ul class="hamburger">
-                <li class="drop"><a href="#"></a></li>
-                <li class="drop"><a href="#"></a></li>
-                <li class="drop"><a href="#"></a></li>
+        <nav> 
+            <ul class="hamburger" id="hamburger-menu">
+                <li class="drop"></li>
+                <li class="drop"></li>
+                <li class="drop"></li>
             </ul>
-            <ul class="nav-link">
+            <ul class="nav-link" >
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
+    <menu class="menu menu-visibility">
+        <div class="cancel-icon" id="cancel-icon">
+            <img src="./assets/IconCancel.svg" alt="">
+        </div>
+        <ul class = "menuList">
+            <li class="menuLi"><a href="#" data-target="cards">Portfolio</a></li>
+            <li class="menuLi"><a href="#" data-target="about">About</a></li>
+            <li class="menuLi"><a href="#" data-target="contact">Contact</a></li>
+        </ul>
+    </menu>
     <main>
         <section class="hero">
             <div class="hero-container">
@@ -64,7 +75,7 @@
             </div>
         </section>
 
-        <section class="cards">
+        <section class="cards content" id="cards">
             <!-- Card One -->
             <section class="card">
                 <img class="m-img" src="./assets/cards/card1.svg" alt="Tonic">
@@ -199,7 +210,7 @@
                 </div>
             </section>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="aboutme">
                 <section class="aboutme-header">
                     <h2>About Myself</h2>
@@ -268,7 +279,7 @@
             </div>
         </section>
 
-        <section class="contactme">
+        <section class="contactme content" id="contact">
             <div class="contactme-container">
                 <h3>Contact me</h3>
                 <p>
@@ -285,5 +296,6 @@
             </div>
         </section>
     </main>
+    <script src="./scripts/main.js"></script>
 </body>
 </html>

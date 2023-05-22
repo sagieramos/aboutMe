@@ -39,10 +39,14 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Different layout for Desktop and Mobile**
-- **Responsive webpage**
-- **Page animation**
-- **Submitting form using formspree.io**
+- Different layout for Desktop and Mobile
+- Responsive webpage
+- Page animation
+- Submitting form using formspree.io
+- When the user clicks (or taps) the hamburger button, the mobile menu appears.
+- When the user clicks (or taps) the close (X) button, the mobile menu disappears.
+- When the user clicks (or taps) any of the mobile menu options, the mobile menu disappears.
+- When the user clicks (or taps) any of the mobile menu options, a correct part of the page is displayed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -81,6 +85,13 @@ To run the project, execute the following command:
 - GitHub: [@sagieramos](https://github.com/sagieramos)
 - Twitter: [@sagieramos](https://twitter.com/sagieramos)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/sagieramos)
+
+👤 **Tegum clarence**
+- GitHub: [@clarenceAtim](https://github.com/clarenceAtim)
+- Twitter: [@teclabliss](https://twitter.com/teclabliss)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/Tegumclarence)
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
