@@ -34,7 +34,7 @@ function handleMenuOptionClick(event) {
 
 hamburgerMenu.addEventListener('click', () => {
   menuContainer.style.display = 'block';
-  hamburgerMenu.style.display = 'none'; 
+  hamburgerMenu.style.display = 'none';
 });
 
 cancelIcon.addEventListener('click', () => {
