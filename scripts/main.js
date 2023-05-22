@@ -13,7 +13,6 @@ function handleWindowResize() {
 }
 
 function handleClick() {
-  const menuContainer = document.querySelector('.menu');
   menuContainer.style.display = 'none';
 }
 
@@ -35,10 +34,12 @@ function handleMenuOptionClick(event) {
 
 hamburgerMenu.addEventListener('click', () => {
   menuContainer.style.display = 'block';
+  hamburgerMenu.style.display = 'none';
 });
 
 cancelIcon.addEventListener('click', () => {
   menuContainer.style.display = 'none';
+  hamburgerMenu.style.display = 'flex';
 });
 
 document.addEventListener('DOMContentLoaded', () => {
