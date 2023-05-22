@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="./stylesheets/common.css">
+    <link rel="stylesheet" href="./stylesheets/menu.css">
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 999px)" href="./stylesheets/M_mobile.css">
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 999px)" href="./stylesheets/M_cards.css">
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 999px)" href="./stylesheets/M_shower.css">
@@ -20,19 +21,31 @@
 
     <header>
         <p><a href="#" class="logo">StAnLEY</a></p>
-        <nav>
-            <ul class="hamburger">
-                <li class="drop"><a href="#"></a></li>
-                <li class="drop"><a href="#"></a></li>
-                <li class="drop"><a href="#"></a></li>
-            </ul>
-            <ul class="nav-link">
+        <nav> 
+            <a href="#">
+                <ul class="hamburger">
+                    <li class="drop"></li>
+                    <li class="drop"></li>
+                    <li class="drop"></li>
+                </ul>
+            </a>
+            <ul class="nav-link" >
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
+    <menu>
+        <div class="cancel-icon">
+            <img src="./assets/IconCancel.svg" alt="">
+        </div>
+        <ul>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </menu>
     <main>
         <section class="hero">
             <div class="hero-container">
@@ -285,5 +298,6 @@
             </div>
         </section>
     </main>
+    <script src="./scripts/main.js"></script>
 </body>
 </html>
