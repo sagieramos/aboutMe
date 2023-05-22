@@ -17,6 +17,20 @@ function handleClick() {
   menuContainer.style.display = 'none';
 }
 
+function handleMenuOptionClick(event) {
+  event.preventDefault();
+  const target = event.target.getAttribute('data-target');
+  const activeContent = document.querySelector('.content.active');
+  const targetContent = document.getElementById(target);
+  if (activeContent) {
+    activeContent.classList.remove('active');
+  }
+  if (targetContent) {
+    targetContent.classList.add('active');
+    targetContent.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
 // Event Checker
 
 hamburgerMenu.addEventListener('click', () => {
@@ -35,3 +49,10 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 window.addEventListener('resize', handleWindowResize);
+
+document.addEventListener('DOMContentLoaded', () => {
+  const menuOptions = document.querySelectorAll('.menuList a');
+  for (let i = 0; i < menuOptions.length; i += 1) {
+    menuOptions[i].addEventListener('click', handleMenuOptionClick);
+  }
+});
