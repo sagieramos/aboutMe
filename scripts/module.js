@@ -11,7 +11,7 @@ function popup(project, index) {
             <li>2015</li>
         </ul>
     </div>
-    <img class="m-img" src="./assets/cards/${proj.image}" alt="Tonic">
+    <img class="m-img" src="${proj.image}" alt="Tonic">
     <article class="card-container">
         <p class="content">
             ${proj.article}
