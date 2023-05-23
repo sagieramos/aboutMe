@@ -59,6 +59,8 @@ a {
   padding: 12px 12px;
   height: 48px;
   letter-spacing: 0.03em;
+  cursor: pointer;
+  color: #6070ff;
 }
 
 .social-icons2 {
