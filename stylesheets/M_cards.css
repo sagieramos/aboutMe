@@ -4,6 +4,7 @@
   gap: 88px;
   padding: 114px 24px;
   width: 100%;
+  background-color: #E5E5E5;
 }
 
 .card {
@@ -18,6 +19,15 @@
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   margin: 0 auto;
+}
+
+.popup {
+  padding: 16px 16px;
+  backdrop-filter: blur(5px);
+}
+
+.pop-card {
+  backdrop-filter: blur(5px);
 }
 
 .card img {
@@ -40,6 +50,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
+  width: 100%;
 }
 
 .card-header h2 {
@@ -103,6 +114,49 @@
   padding: 0;
   gap: 8px;
   list-style-type: none;
+}
+.line {
+  height: 17px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line div {
+  border: 1px solid #EBECF0;
+  width: 100%;
+}
+.action {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 9px;
+  gap: 8px;
+  list-style-type: none;
+  height: 56px;
+  width: 311px;
+}
+
+.action-btn {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 12px auto;
+  font-weight: 500;
+font-size: 15px;
+line-height: 20px;
+}
+
+.action-btn p {
+  color: #396DF2;
+  font-weight: 500;
+line-height: 20px;
+}
+
+.action-btn .action-img {
+  width: 18px;
+height: auto;
 }
 
 .btn a {
