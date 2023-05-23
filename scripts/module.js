@@ -1,5 +1,6 @@
 function popup (img, content) {
 let str = `<section class="popup">
+<img class="popup-cancel" src="./assets/IconCancelGray.svg" alt="cancel-icon">
 <section class="card pop-card">
     <div class="card-header">
         <h2>Tonic</h2>
@@ -42,6 +43,6 @@ let str = `<section class="popup">
 </section>`
 
 return str;
-};
+}
 
 module.exports = popup;

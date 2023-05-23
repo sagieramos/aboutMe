@@ -33,9 +33,9 @@
 main {
   background-position-y: 50px;
   background-image: url(../assets/header-shapes-mobile.svg);
-  background-repeat:repeat-y;
+  background-repeat: repeat-y;
   background-size: contain;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 .hero-container {
