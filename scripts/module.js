@@ -89,19 +89,39 @@ function popup(project, index) {
 
 const buttons = document.getElementsByClassName('btn-card');
 const pop = document.getElementById('cont');
-const main = document.getElementById('main');
-const closeBtn = document.getElementById('close');
+const header = document.getElementById('header');
+const card = document.getElementsByClassName('c-hide');
+const about = document.getElementById('about');
+const contact = document.getElementsByClassName('contactme-container');
 
 for (let i = 0; i < buttons.length; i += 1) {
   buttons[i].addEventListener('click', () => {
     pop.innerHTML = popup(projects, i);
     pop.style.display = 'block';
 
-    main.style.display = 'none';
+    // Store the current scroll position
+    const previousScrollTop = (
+      window.pageYOffset || document.documentElement.scrollTop
+        || document.body.scrollTop || 0);
+    for (let j = 0; j < card.length; j += 1) {
+      if (j !== i) card[j].style.display = 'none';
+    }
+
+    header.style.display = 'none';
+    about.style.display = 'none';
+    contact[0].style.display = 'none';
+
+    const closeBtn = document.getElementById('close');
 
     closeBtn.addEventListener('click', () => {
       pop.style.display = 'none';
-      main.style.display = 'block';
+      window.scrollTo(0, previousScrollTop);
+      for (let j = 0; j < card.length; j += 1) {
+        card[j].style.display = 'block';
+      }
+      header.style.display = 'block';
+      about.style.display = 'block';
+      contact[0].style.display = 'block';
     });
   });
 }
