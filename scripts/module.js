@@ -91,7 +91,7 @@ const buttons = document.getElementsByClassName('btn-card');
 const pop = document.getElementById('cont');
 const header = document.getElementById('header');
 const card = document.getElementsByClassName('c-hide');
-const about = document.getElementsByClassName('aboutme');
+const about = document.getElementById('abt');
 const contact = document.getElementsByClassName('contactme-container');
 
 for (let i = 0; i < buttons.length; i += 1) {
@@ -108,7 +108,7 @@ for (let i = 0; i < buttons.length; i += 1) {
     }
 
     header.style.display = 'none';
-    about[0].style.display = 'none';
+    about.style.display = 'none';
     contact[0].style.display = 'none';
 
     const closeBtn = document.getElementById('close');
@@ -120,7 +120,7 @@ for (let i = 0; i < buttons.length; i += 1) {
         card[j].style.display = 'block';
       }
       header.style.display = 'block';
-      about[0].style.display = 'block';
+      about.style.display = 'block';
       contact[0].style.display = 'block';
     });
   });
