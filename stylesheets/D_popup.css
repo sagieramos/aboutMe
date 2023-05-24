@@ -44,6 +44,12 @@
     width: 100%;
 }
 
+.TnA {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
 .TnA ul {
     width: 306px;
     list-style-type: none;
@@ -51,4 +57,75 @@
 
 .tech {
     padding-right: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    list-style-type: none;
 }
+  
+  .line {
+    height: 17px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .line div {
+    border: 1px solid #ebecf0;
+    width: 100%;
+  }
+
+  .D-action {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .article {
+    font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+color: #344563;
+  }
+  .action {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 9px;
+    gap: 8px;
+    list-style-type: none;
+    height: 56px;
+    width: 311px;
+  }
+  
+  .action-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: auto;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    width: 142px;
+    height: 40px;
+  }
+  
+  .action-btn p {
+    color: #396df2;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  
+  .action-btn .action-img {
+    width: 18px;
+    height: auto;
+  }
+  
+  .btn a {
+    color: #6070ff;
+  }
+  
+  .tags li a {
+    color: #6070ff;
+  }

@@ -108,3 +108,18 @@ a {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
+
+
+.line {
+  height: 17px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line div {
+  border: 1px solid #ebecf0;
+  width: 100%;
+}
