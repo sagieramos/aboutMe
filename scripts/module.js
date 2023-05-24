@@ -89,39 +89,19 @@ function popup(project, index) {
 
 const buttons = document.getElementsByClassName('btn-card');
 const pop = document.getElementById('cont');
-const header = document.getElementById('header');
-const card = document.getElementsByClassName('c-hide');
-const about = document.getElementById('abt');
-const contact = document.getElementsByClassName('contactme-container');
+const main = document.getElementById('main');
+const closeBtn = document.getElementById('close');
 
 for (let i = 0; i < buttons.length; i += 1) {
   buttons[i].addEventListener('click', () => {
     pop.innerHTML = popup(projects, i);
     pop.style.display = 'block';
 
-    // Store the current scroll position
-    const previousScrollTop = (
-      window.pageYOffset || document.documentElement.scrollTop
-        || document.body.scrollTop || 0);
-    for (let j = 0; j < card.length; j += 1) {
-      if (j !== i) card[j].style.display = 'none';
-    }
-
-    header.style.display = 'none';
-    about.style.display = 'none';
-    contact[0].style.display = 'none';
-
-    const closeBtn = document.getElementById('close');
+    main.style.display = 'none';
 
     closeBtn.addEventListener('click', () => {
       pop.style.display = 'none';
-      window.scrollTo(0, previousScrollTop);
-      for (let j = 0; j < card.length; j += 1) {
-        card[j].style.display = 'block';
-      }
-      header.style.display = 'block';
-      about.style.display = 'block';
-      contact[0].style.display = 'block';
+      main.style.display = 'block';
     });
   });
 }
