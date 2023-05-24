@@ -1,9 +1,3 @@
-const popup = require('./module.js');
-const project = require('./projects.js');
-
-// For nodejs testing purpose
-console.log(popup(project, 0));
-
 const hamburgerMenu = document.getElementById('hamburger-menu');
 const menuContainer = document.querySelector('.menu');
 const cancelIcon = document.getElementById('cancel-icon');

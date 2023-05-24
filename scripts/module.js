@@ -1,7 +1,33 @@
+const generalArticle = `
+Lorem Ipsum is simply dummy text of the printing and typesetting 
+industry. Lorem Ipsum has been the industry's standard dummy text 
+ever since the 1500s, when an unknown printer took a galley of type 
+and scrambled it to make a type specimen book. It has survived not 
+only five centuries, but also the leap into electronic typesetting, 
+remaining essent
+`;
+
+const projects = [
+  {
+    name: 'Tonic',
+    article: generalArticle,
+    image: './assets/cards/card1.svg',
+    liveLink: '#',
+    sourceLink: '#',
+  },
+  {
+    name: 'Multi-Post Stories',
+    article: generalArticle,
+    image: './assets/cards/card2.svg',
+    liveLink: '#',
+    sourceLink: '#',
+  },
+];
+
 function popup(project, index) {
   const proj = project[index];
   const str = `<section class="popup">
-<img class="popup-cancel" id="closs" src="./assets/IconCancelGray.svg" alt="cancel-icon">
+<img class="popup-cancel" id="close" src="./assets/IconCancelGray.svg" alt="cancel-icon">
 <section class="card pop-card">
     <div class="card-header">
         <h2>${proj.name}</h2>
@@ -45,4 +71,21 @@ function popup(project, index) {
   return str;
 }
 
-module.exports = popup;
+let button = document.getElementsByClassName('btn-card')
+let pop = document.getElementById('cont');
+let closeBtn = "";
+const main = document.getElementById('main');
+for (let i = 0; i < button.length; i = i + 1)
+button[i].addEventListener('click', () => {
+    cont.innerHTML = popup(projects, i);
+    closeBtn = document.getElementById('close');
+    pop.style.display = 'block';
+    main.style.display = 'none';
+});
+
+closeBtn.addEventListener('click', function() {
+    pop.style.display = 'none';
+  });
+
+  
+  
