@@ -140,19 +140,6 @@
   list-style-type: none;
 }
 
-.line {
-  height: 17px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.line div {
-  border: 1px solid #ebecf0;
-  width: 100%;
-}
-
 .action {
   display: flex;
   flex-direction: row;
