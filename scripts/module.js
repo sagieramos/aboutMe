@@ -97,7 +97,7 @@ const contact = document.getElementsByClassName('contactme-container');
 for (let i = 0; i < buttons.length; i += 1) {
   buttons[i].addEventListener('click', () => {
     pop.innerHTML = popup(projects, i);
-    pop.style.display = 'block';
+    pop.style.display = 'flex';
 
     // Store the current scroll position
     const previousScrollTop = (
