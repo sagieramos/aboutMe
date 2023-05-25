@@ -7,7 +7,7 @@ only five centuries, but also the leap into electronic typesetting,
 remaining essent
 `;
 
-const projects = [
+const mobileData = [
   {
     name: 'Tonic',
     article: generalArticle,
@@ -102,7 +102,7 @@ and scrambled it 1960s with the releawn printer took a galley of type
 and scrambled it 1960s.
 `;
 
-const Dprojects = [
+const desktopData = [
   {
     name: 'Tonic',
     company: 'CANOPY',
@@ -149,7 +149,7 @@ const Dprojects = [
   },
 ];
 
-function Dpopup(obj, index) {
+function desktopPopUp(obj, index) {
   const proj = obj[index];
   let techLi = `<ul class="tech tags">
     `;
@@ -207,50 +207,70 @@ function Dpopup(obj, index) {
 }
 
 const buttons = document.getElementsByClassName('btn-card');
-const pop = document.getElementById('cont');
-const Dpop = document.getElementById('D-cont');
+const mobileSection = document.getElementById('cont');
+const desktopSection = document.getElementById('D-cont');
 const header = document.getElementById('header');
 const main = document.getElementById('main');
 
 for (let i = 0; i < buttons.length; i += 1) {
   buttons[i].addEventListener('click', () => {
-    pop.innerHTML = popup(projects, i);
-    pop.style.display = 'flex';
+    const previousScrollTop = (window.pageYOffset
+    || document.documentElement.scrollTop || document.body.scrollTop || 0
+    );
+    mobileSection.innerHTML = popup(mobileData, i);
 
-    // Store the current scroll position
-    const previousScrollTop = (
-      window.pageYOffset || document.documentElement.scrollTop
-        || document.body.scrollTop || 0);
-
+    mobileSection.style.display = 'flex';
     main.style.display = 'none';
     header.style.display = 'none';
+
+    window.scrollTo(0, 0);
 
     const closeBtn = document.getElementById('close');
 
     closeBtn.addEventListener('click', () => {
-      pop.style.display = 'none';
-      window.scrollTo(0, previousScrollTop);
+      mobileSection.style.display = 'none';
       main.style.display = 'block';
       header.style.display = 'block';
-      Dpop.style.display = 'none';
+      desktopSection.style.display = 'none';
+      window.scrollTo(0, previousScrollTop);
     });
   });
 }
 
 for (let i = 0; i < buttons.length; i += 1) {
   buttons[i].addEventListener('click', () => {
-    Dpop.innerHTML = Dpopup(Dprojects, i);
-    Dpop.style.display = 'flex';
+    desktopSection.innerHTML = desktopPopUp(desktopData, i);
+    if (window.innerWidth > 999) desktopSection.style.display = 'flex';
     main.style.display = 'none';
     header.style.display = 'none';
 
     const closeBtn = document.getElementById('D-close');
 
     closeBtn.addEventListener('click', () => {
-      Dpop.style.display = 'none';
+      desktopSection.style.display = 'none';
       main.style.display = 'block';
       header.style.display = 'block';
-      pop.style.display = 'none';
+      mobileSection.style.display = 'none';
     });
   });
 }
+
+function showAppropriateSection() {
+  if (window.innerWidth < 1000) {
+    // Show mobile section
+    mobileSection.style.display = 'block';
+    // Hide desktop section
+    desktopSection.style.display = 'none';
+  } else {
+    // Hide mobile section
+    mobileSection.style.display = 'none';
+    // Show desktop section
+    desktopSection.style.display = 'block';
+  }
+}
+
+// Call the function initially to show the appropriate section on page load
+showAppropriateSection();
+
+// Listen for window resize events and update the section visibility accordingly
+window.addEventListener('resize', showAppropriateSection);
