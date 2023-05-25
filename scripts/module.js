@@ -263,7 +263,9 @@ for (let i = 0; i < buttons.length; i += 1) {
 }
 
 function showAppropriateSection() {
-  if (eventChecker === 1) {}
+  if (eventChecker === 1) {
+    void(0);
+  }
   else if (window.innerWidth < 1000) {
     // Show mobile section
     mobileSection.style.display = 'block';
