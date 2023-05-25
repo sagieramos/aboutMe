@@ -1,15 +1,17 @@
 const hamburgerMenu = document.getElementById('hamburger-menu');
 const menuContainer = document.querySelector('.menu');
 const cancelIcon = document.getElementById('cancel-icon');
+const html = document.querySelector('html');
 
 // Function Declaration
 
 function handleWindowResize() {
-  const menuContainer = document.querySelector('.menu');
   const windowWidth = window.innerWidth || document.documentElement.clientWidth;
   if (windowWidth > 998) {
     menuContainer.style.display = 'none';
   }
+  hamburgerMenu.style.display = 'flex';
+  html.style.overflowY = 'auto';
 }
 
 function handleClick() {
@@ -29,6 +31,7 @@ function handleMenuOptionClick(event) {
     targetContent.scrollIntoView({ behavior: 'smooth' });
   }
   hamburgerMenu.style.display = 'flex';
+  html.style.overflowY = 'auto';
 }
 
 // Event Checker
@@ -36,11 +39,13 @@ function handleMenuOptionClick(event) {
 hamburgerMenu.addEventListener('click', () => {
   menuContainer.style.display = 'block';
   hamburgerMenu.style.display = 'none';
+  html.style.overflowY = 'hidden';
 });
 
 cancelIcon.addEventListener('click', () => {
   menuContainer.style.display = 'none';
   hamburgerMenu.style.display = 'flex';
+  html.style.overflowY = 'auto';
 });
 
 document.addEventListener('DOMContentLoaded', () => {

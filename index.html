@@ -15,36 +15,26 @@
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 1000px)" href="./stylesheets/D_desktop.css">
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 1000px)" href="./stylesheets/D_cards.css">
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 1000px)" href="./stylesheets/D_shower.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1000px)" href="./stylesheets/D_popup.css">
     <title>Portfolio</title>
 </head>
 <body>
-
-    <header>
-        <p><a href="#" class="logo">StAnLEY</a></p>
-        <nav> 
-            <ul class="hamburger" id="hamburger-menu">
-                <li class="drop"></li>
-                <li class="drop"></li>
-                <li class="drop"></li>
-            </ul>
-            <ul class="nav-link" >
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <menu class="menu menu-visibility">
-        <div class="cancel-icon" id="cancel-icon">
-            <img src="./assets/IconCancel.svg" alt="">
-        </div>
-        <ul class = "menuList">
-            <li class="menuLi"><a href="#" data-target="cards">Portfolio</a></li>
-            <li class="menuLi"><a href="#" data-target="about">About</a></li>
-            <li class="menuLi"><a href="#" data-target="contact">Contact</a></li>
-        </ul>
-    </menu>
-    <main>
+    <header id="header">
+        <section class="header">
+            <p><a href="#" class="logo">StAnLEY</a></p>
+            <nav> 
+                <ul class="hamburger" id="hamburger-menu">
+                    <li class="drop"></li>
+                    <li class="drop"></li>
+                    <li class="drop"></li>
+                </ul>
+                <ul class="nav-link" >
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
         <section class="hero">
             <div class="hero-container">
             <h1>I’m Stanley.<br>Glad to see you!</h1>
@@ -74,12 +64,24 @@
             </ul>
             </div>
         </section>
-
+    </header>
+    <menu class="menu menu-visibility">
+        <div class="cancel-icon" id="cancel-icon">
+            <img src="./assets/IconCancel.svg" alt="">
+        </div>
+        <ul class = "menuList">
+            <li class="menuLi"><a href="#" data-target="cards">Portfolio</a></li>
+            <li class="menuLi"><a href="#" data-target="about">About</a></li>
+            <li class="menuLi"><a href="#" data-target="contact">Contact</a></li>
+        </ul>
+    </menu>
+    <!-- Main -->
+    <main id="main">   
         <section class="cards content" id="cards">
             <!-- Card One -->
-            <section class="card">
+            <section class="card c-hide">
                 <img class="m-img" src="./assets/cards/card1.svg" alt="Tonic">
-                <img class="d-img" src="./assets/cards/d-card1.svg" alt="Tonic" class="d-img">
+                <img class="d-img" src="./assets/D_cards/D_card1.svg" alt="Tonic" class="d-img">
                 <div class="card-container">
                     <div class="card-header">
                         <h2>Tonic</h2>
@@ -100,14 +102,12 @@
                         <li><a href="#">CSS</a></li>
                         <li><a href="#">JavaScript</a></li>     
                     </ul>
-                    <div class="btn-container">
-                        <div class="btn"><a href="https://github.com/sagieramos">See Project</a></div>
-                    </div>
+                    <div class="btn btn-card" id="card-pj1">See Project</div>
             </section>
             <!-- Card Two -->
-            <section class="card card-two">
+            <section class="card card-two c-hide">
                 <img class="m-img" src="./assets/cards/card2.svg" alt="Tonic">
-                <img class="d-img" src="./assets/cards/card4.svg" alt="Tonic">
+                <img class="d-img" src="./assets/D_cards/D_card2.svg" alt="Tonic">
                 <div class="card-container">
                     <div class="card-header">
                         <h2>Multi-Post Stories</h2>
@@ -134,14 +134,12 @@
                         <li><a href="#">CSS</a></li>
                         <li><a href="#">JavaScript</a></li>     
                     </ul>
-                    <div class="btn-container">
-                        <div class="btn"><a href="https://github.com/sagieramos">See Project</a></div>
-                    </div>
+                    <div class="btn btn-card" id="card-pj2">See Project</div>
             </section>
             <!-- Card Three -->
-            <section class="card">
+            <section class="card c-hide">
                 <img class="m-img" src="./assets/cards/card3.svg" alt="Tonic project">
-                <img class="d-img" src="./assets/cards/card1.svg" alt="Tonic project">
+                <img class="d-img" src="./assets/D_cards/D_card3.svg" alt="Tonic project">
                 <div class="card-container">
                     <div class="card-header">
                         <h2 class="m-img">Tonic</h2>
@@ -169,14 +167,12 @@
                         <li><a href="#">CSS</a></li>
                         <li><a href="#">JavaScript</a></li>     
                     </ul>
-                    <div class="btn-container">
-                        <div class="btn"><a href="https://github.com/sagieramos">See Project</a></div>
-                    </div>
+                    <div class="btn btn-card" id="card-pj3">See Project</div>
             </section>
             <!-- Card Four -->
-            <section class="card card-four">
+            <section class="card card-four c-hide">
                 <img class="m-img" src="./assets/cards/card4.svg" alt="Tonic">
-                <img class="d-img" src="./assets/cards/card2.svg" alt="Tonic">
+                <img class="d-img" src="./assets/D_cards/D_card4.svg" alt="Tonic">
                 <div class="card-container">
                     <div class="card-header">
                         <h2 class="m-img">Multi-Post Stories</h2>
@@ -204,9 +200,7 @@
                         <li><a href="#">CSS</a></li>
                         <li><a href="#">JavaScript</a></li>     
                     </ul>
-                    <div class="btn-container">
-                        <div class="btn"><a href="https://github.com/sagieramos">See Project</a></div>
-                    </div>
+                    <div class="btn btn-card" id="card-pj4">See Project</div>
                 </div>
             </section>
         </section>
@@ -278,7 +272,6 @@
                 </ul>
             </div>
         </section>
-
         <section class="contactme content" id="contact">
             <div class="contactme-container">
                 <h3>Contact me</h3>
@@ -295,7 +288,14 @@
                 </form>
             </div>
         </section>
-    </main>
+    </main> 
+    <!-- Use to create a dynamic popup content for mobile -->
+    <section class="popup-hero" id="cont"></section>
+    <!-- Use to create a dynamic popup content for desktop -->
+    <section class="D-popup-hero" id="D-cont"></section>
+
     <script src="./scripts/main.js"></script>
+    <script src="./scripts/module.js"></script>
+   
 </body>
 </html>
