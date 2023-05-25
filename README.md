@@ -30,7 +30,7 @@
 - [📝 License](#license)
 
 
-# 📖 Fullstack development <a name="about-project"></a>
+# 📖 Fullstack Development <a name="about-project"></a>
 
 **Portforlio** is a simple HTML and CSS project that shows about me: 
 
