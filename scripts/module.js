@@ -7,40 +7,104 @@ only five centuries, but also the leap into electronic typesetting,
 remaining essent
 `;
 
-const mobileData = [
-  {
-    name: 'Tonic',
-    article: generalArticle,
-    image: './assets/cards/card1.svg',
-    liveLink: '#',
-    sourceLink: 'https://github.com/sagieramos/',
-  },
-  {
-    name: 'Multi-Post<br>Stories',
-    article: generalArticle,
-    image: './assets/cards/card2.svg',
-    liveLink: '#',
-    sourceLink: 'https://github.com/sagieramos/',
-  },
-  {
-    name: 'Tonic',
-    article: generalArticle,
-    image: './assets/cards/card3.svg',
-    liveLink: '#',
-    sourceLink: 'https://github.com/sagieramos/',
-  },
-  {
-    name: 'Multi-Post<br>Stories',
-    article: generalArticle,
-    image: './assets/cards/card4.svg',
-    liveLink: '#',
-    sourceLink: 'https://github.com/sagieramos/',
-  },
-];
+const DgeneralArticle = `
+Lorem Ipsum is simply dummy text of the printing and typesetting 
+industry. Lorem Ipsum has been the industry's standard dummy text 
+ever since the 1500s, when an unknown printer took a galley of type 
+and scrambled it 1960s. Lorem Ipsum is simply dummy text of the 
+printing and typesetting industry. 
+<br> <br>
+Lorem Ipsum has been the industry's standard dummy text ever since 
+the 1500s, when an unknown printer took a galley of type and scrambled 
+it 1960s with the releorem Ipsum is simply dummy text of the printing 
+and typesetting industry. Lorem Ipsum han printer took a galley of type 
+and scrambled it 1960s with the releawn printer took a galley of type 
+and scrambled it 1960s.
+`;
 
-function popup(project, index) {
-  const proj = project[index];
-  const str = `
+const pageData = {
+  mobileData: [
+    {
+      name: 'Tonic',
+      article: generalArticle,
+      image: './assets/cards/card1.svg',
+      liveLink: '#',
+      sourceLink: 'https://github.com/sagieramos/'
+    },
+    {
+      name: 'Multi-Post<br>Stories',
+      article: generalArticle,
+      image: './assets/cards/card2.svg',
+      liveLink: '#',
+      sourceLink: 'https://github.com/sagieramos/'
+    },
+    {
+      name: 'Tonic',
+      article: generalArticle,
+      image: './assets/cards/card3.svg',
+      liveLink: '#',
+      sourceLink: 'https://github.com/sagieramos/'
+    },
+    {
+      name: 'Multi-Post<br>Stories',
+      article: generalArticle,
+      image: './assets/cards/card4.svg',
+      liveLink: '#',
+      sourceLink: 'https://github.com/sagieramos/'
+    }
+  ],
+
+  desktopData: [
+    {
+      name: 'Tonic',
+      company: 'CANOPY',
+      stack: 'Back End Dev',
+      year: '2015',
+      image: './assets/D_cards/D_card1.svg',
+      article: DgeneralArticle,
+      tech: ['html', 'CSS', 'JavaScript', 'Ruby', 'Bootstrap'],
+      liveLink: '#',
+      sourceLink: 'https://github.com/sagieramos/'
+    },
+    {
+      name: 'Multi-Post Stories',
+      company: 'FACEBOOK',
+      stack: 'Full Stack Dev',
+      year: '2015',
+      image: './assets/D_cards/D_card2.svg',
+      article: DgeneralArticle,
+      tech: ['html', 'Ruby on Rails', 'CSS', 'JavaScript'],
+      liveLink: '#',
+      sourceLink: 'https://github.com/sagieramos/'
+    },
+    {
+      name: 'Facebook 360',
+      company: 'FACEBOOK',
+      stack: 'Full Stack Dev',
+      year: '2015',
+      image: './assets/D_cards/D_card3.svg',
+      article: DgeneralArticle,
+      tech: ['html', 'Ruby on Rails', 'CSS', 'JavaScript'],
+      liveLink: '#',
+      sourceLink: 'https://github.com/sagieramos/'
+    },
+    {
+      name: 'Uber Navigation',
+      company: 'Uber',
+      stack: 'Lead Developer',
+      year: '2018',
+      image: './assets/D_cards/D_card4.svg',
+      article: DgeneralArticle,
+      tech: ['html', 'Ruby on Rails', 'CSS', 'JavaScript'],
+      liveLink: '#',
+      sourceLink: 'https://github.com/sagieramos/'
+    }
+  ]
+};
+
+function popup(page, index) {
+  let proj = page.mobileData[index];
+  let str = `
     <section class="popup">
     <img class="popup-cancel" id="close" src="./assets/IconCancelGray.svg" alt="cancel-icon">
     <section class="card pop-card">
@@ -87,70 +151,8 @@ function popup(project, index) {
   return str;
 }
 
-const DgeneralArticle = `
-Lorem Ipsum is simply dummy text of the printing and typesetting 
-industry. Lorem Ipsum has been the industry's standard dummy text 
-ever since the 1500s, when an unknown printer took a galley of type 
-and scrambled it 1960s. Lorem Ipsum is simply dummy text of the 
-printing and typesetting industry. 
-<br> <br>
-Lorem Ipsum has been the industry's standard dummy text ever since 
-the 1500s, when an unknown printer took a galley of type and scrambled 
-it 1960s with the releorem Ipsum is simply dummy text of the printing 
-and typesetting industry. Lorem Ipsum han printer took a galley of type 
-and scrambled it 1960s with the releawn printer took a galley of type 
-and scrambled it 1960s.
-`;
-
-const desktopData = [
-  {
-    name: 'Tonic',
-    company: 'CANOPY',
-    stack: 'Back End Dev',
-    year: '2015',
-    image: './assets/D_cards/D_card1.svg',
-    article: DgeneralArticle,
-    tech: ['html', 'CSS', 'JavaScript', 'Ruby', 'Bootstrap'],
-    liveLink: '#',
-    sourceLink: 'https://github.com/sagieramos/',
-  },
-  {
-    name: 'Multi-Post Stories',
-    company: 'FACEBOOK',
-    stack: 'Full Stack Dev',
-    year: '2015',
-    image: './assets/D_cards/D_card2.svg',
-    article: DgeneralArticle,
-    tech: ['html', 'Ruby on rails', 'CSS', 'JavaScript'],
-    liveLink: '#',
-    sourceLink: 'https://github.com/sagieramos/',
-  },
-  {
-    name: 'Facebook 360',
-    company: 'FACEBOOK',
-    stack: 'Full Stack Dev',
-    year: '2015',
-    image: './assets/D_cards/D_card3.svg',
-    article: DgeneralArticle,
-    tech: ['html', 'Ruby on rails', 'CSS', 'JavaScript'],
-    liveLink: '#',
-    sourceLink: 'https://github.com/sagieramos/',
-  },
-  {
-    name: 'Uber Navigation',
-    company: 'Uber',
-    stack: 'Lead Developer',
-    year: '2018',
-    image: './assets/D_cards/D_card4.svg',
-    article: DgeneralArticle,
-    tech: ['html', 'Ruby on rails', 'CSS', 'JavaScript'],
-    liveLink: '#',
-    sourceLink: 'https://github.com/sagieramos/',
-  },
-];
-
-function desktopPopUp(obj, index) {
-  const proj = obj[index];
+function desktopPopUp(page, index) {
+  let proj = page.desktopData[index];
   let techLi = `<ul class="tech tags">
     `;
   for (let i = 0; i < proj.tech.length; i += 1) {
@@ -220,7 +222,7 @@ for (let i = 0; i < buttons.length; i += 1) {
     const previousScrollTop = (window.pageYOffset
     || document.documentElement.scrollTop || document.body.scrollTop || 0
     );
-    mobileSection.innerHTML = popup(mobileData, i);
+    mobileSection.innerHTML = popup(pageData, i);
 
     mobileSection.style.display = 'flex';
     main.style.display = 'none';
@@ -244,7 +246,7 @@ for (let i = 0; i < buttons.length; i += 1) {
 
 for (let i = 0; i < buttons.length; i += 1) {
   buttons[i].addEventListener('click', () => {
-    desktopSection.innerHTML = desktopPopUp(desktopData, i);
+    desktopSection.innerHTML = desktopPopUp(pageData, i);
     if (window.innerWidth > 999) desktopSection.style.display = 'flex';
     main.style.display = 'none';
     header.style.display = 'none';
