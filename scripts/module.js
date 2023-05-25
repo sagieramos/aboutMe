@@ -212,6 +212,9 @@ const desktopSection = document.getElementById('D-cont');
 const header = document.getElementById('header');
 const main = document.getElementById('main');
 
+// button cancel event checker. 
+let eventChecker = 0;
+
 for (let i = 0; i < buttons.length; i += 1) {
   buttons[i].addEventListener('click', () => {
     const previousScrollTop = (window.pageYOffset
@@ -222,12 +225,14 @@ for (let i = 0; i < buttons.length; i += 1) {
     mobileSection.style.display = 'flex';
     main.style.display = 'none';
     header.style.display = 'none';
+    eventChecker = 0;
 
     window.scrollTo(0, 0);
 
     const closeBtn = document.getElementById('close');
 
     closeBtn.addEventListener('click', () => {
+      eventChecker = 1;
       mobileSection.style.display = 'none';
       main.style.display = 'block';
       header.style.display = 'block';
@@ -243,10 +248,12 @@ for (let i = 0; i < buttons.length; i += 1) {
     if (window.innerWidth > 999) desktopSection.style.display = 'flex';
     main.style.display = 'none';
     header.style.display = 'none';
+    eventChecker = 0;
 
-    const closeBtn = document.getElementById('D-close');
+    const closeBtnD = document.getElementById('D-close');
 
-    closeBtn.addEventListener('click', () => {
+    closeBtnD.addEventListener('click', () => {
+      eventChecker = 1;
       desktopSection.style.display = 'none';
       main.style.display = 'block';
       header.style.display = 'block';
@@ -256,7 +263,8 @@ for (let i = 0; i < buttons.length; i += 1) {
 }
 
 function showAppropriateSection() {
-  if (window.innerWidth < 1000) {
+  if (eventChecker === 1) {}
+  else if (window.innerWidth < 1000) {
     // Show mobile section
     mobileSection.style.display = 'block';
     // Hide desktop section
@@ -265,6 +273,7 @@ function showAppropriateSection() {
     // Hide mobile section
     mobileSection.style.display = 'none';
     // Show desktop section
+    if (eventChecker !== 2)
     desktopSection.style.display = 'block';
   }
 }
