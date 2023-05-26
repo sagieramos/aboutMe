@@ -1,9 +1,9 @@
 .cards {
   display: flex;
   flex-direction: column;
-  gap: 142px;
+  gap: 90px;
   width: 100%;
-  padding: 9.86%;
+  padding: 100px;
   margin: 0 auto;
   max-width: 1600px;
 }
@@ -37,13 +37,11 @@
   padding: 24px;
 }
 
-.card-two > img,
-.card-four > img {
+.card:nth-last-of-type(odd) img {
   order: 2;
 }
 
-.card-two > .card-container,
-.card-four > .card-container {
+.card:nth-last-of-type(odd) .card-container {
   order: 1;
 }
 

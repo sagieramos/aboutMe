@@ -22,45 +22,21 @@ and scrambled it 1960s with the releawn printer took a galley of type
 and scrambled it 1960s.
 `;
 
-const pageData = {
-  mobileData: [
-    {
-      name: 'Tonic',
-      article: generalArticle,
-      image: './assets/cards/card1.svg',
-      liveLink: '#',
-      sourceLink: 'https://github.com/sagieramos/'
-    },
-    {
-      name: 'Multi-Post<br>Stories',
-      article: generalArticle,
-      image: './assets/cards/card2.svg',
-      liveLink: '#',
-      sourceLink: 'https://github.com/sagieramos/'
-    },
-    {
-      name: 'Tonic',
-      article: generalArticle,
-      image: './assets/cards/card3.svg',
-      liveLink: '#',
-      sourceLink: 'https://github.com/sagieramos/'
-    },
-    {
-      name: 'Multi-Post<br>Stories',
-      article: generalArticle,
-      image: './assets/cards/card4.svg',
-      liveLink: '#',
-      sourceLink: 'https://github.com/sagieramos/'
-    }
-  ],
-
-  desktopData: [
+const introduction = `A daily selection of privately personalized reads; 
+no accounts or sign-ups required.
+`
+const pageData = 
+  [
     {
       name: 'Tonic',
       company: 'CANOPY',
       stack: 'Back End Dev',
       year: '2015',
-      image: './assets/D_cards/D_card1.svg',
+      image: {
+        mobile: './assets/cards/card1.svg',
+        desktop: './assets/D_cards/D_card1.svg' 
+      },
+      intro: introduction,
       article: DgeneralArticle,
       tech: ['html', 'CSS', 'JavaScript', 'Ruby', 'Bootstrap'],
       liveLink: '#',
@@ -71,7 +47,11 @@ const pageData = {
       company: 'FACEBOOK',
       stack: 'Full Stack Dev',
       year: '2015',
-      image: './assets/D_cards/D_card2.svg',
+      image: {
+        mobile: './assets/cards/card2.svg',
+        desktop: './assets/D_cards/D_card2.svg' 
+      },
+      intro: introduction,
       article: DgeneralArticle,
       tech: ['html', 'Ruby on Rails', 'CSS', 'JavaScript'],
       liveLink: '#',
@@ -82,7 +62,11 @@ const pageData = {
       company: 'FACEBOOK',
       stack: 'Full Stack Dev',
       year: '2015',
-      image: './assets/D_cards/D_card3.svg',
+      image: {
+        mobile: './assets/cards/card3.svg',
+        desktop: './assets/D_cards/D_card3.svg' 
+      },
+      intro: introduction,
       article: DgeneralArticle,
       tech: ['html', 'Ruby on Rails', 'CSS', 'JavaScript'],
       liveLink: '#',
@@ -93,17 +77,59 @@ const pageData = {
       company: 'Uber',
       stack: 'Lead Developer',
       year: '2018',
-      image: './assets/D_cards/D_card4.svg',
+      image: {
+        mobile: './assets/cards/card4.svg',
+        desktop: './assets/D_cards/D_card4.svg' 
+      },
+      intro: introduction,
       article: DgeneralArticle,
       tech: ['html', 'Ruby on Rails', 'CSS', 'JavaScript'],
       liveLink: '#',
       sourceLink: 'https://github.com/sagieramos/'
     }
-  ]
-};
+  ];
 
-function popup(page, index) {
-  let proj = page.mobileData[index];
+function viewPage(data) {
+  let techList = "";
+  let str = "";
+
+  for (let i = 0; i < data.length; i += 1) {
+    techList = '';
+    for (let j = 0; j < data[i].tech.length; j += 1) {
+      techList += `<li><a href="#">${data[i].tech[j]}</a></li>`;
+    }
+
+    str += `
+    <section class="card c-hide">
+        <img class="m-img" src=${data[i].image.mobile} alt="Tonic">
+        <img class="d-img" src=${data[i].image.desktop} alt="Tonic" class="d-img">
+        <div class="card-container">
+            <div class="card-header">
+                <h2>Tonic</h2>
+                <ul class="copyright">
+                    <li>${data[i].company}</li>
+                    <li>${data[i].stack}</li>
+                    <li>${data[i].year}</li>
+                </ul>
+            </div>   
+            <p>${data[i].intro}</p>
+            <ul class="tags">
+                ${techList}
+            </ul>
+            <div class="btn btn-card" id="card-pj1">See Project</div>
+    </section>`;
+  }
+
+  return str;
+}
+
+function mobilePopUp(page) {
+  let proj = page;
+  let techList = "";
+
+  for (let i = 0; i < proj.tech.length; i += 1)
+    techList += `<li><a href="#">${proj.tech[i]}</a></li>`;
+
   let str = `
     <section class="popup">
     <img class="popup-cancel" id="close" src="./assets/IconCancelGray.svg" alt="cancel-icon">
@@ -111,20 +137,18 @@ function popup(page, index) {
         <div class="card-header">
             <h2>${proj.name}</h2>
             <ul class="copyright">
-                <li class="m-img">CANOPY</li>
-                <li>Back End Dev</li>
-                <li>2015</li>
+                <li class="m-img">${proj.company}</li>
+                <li>${proj.stack}</li>
+                <li>${proj.year}</li>
             </ul>
         </div>
-        <img class="m-img" src="${proj.image}" alt="Tonic">
+        <img class="m-img" src="${proj.image.mobile}" alt="Tonic">
         <article class="card-container">
             <p class="content">
                 ${proj.article}
             </p>
             <ul class="tags">
-                <li><a href="#">HTML</a></li>
-                <li><a href="#">CSS</a></li>
-                <li><a href="#">JavaScript</a></li>     
+                ${techList};     
             </ul>
             <div class="line">
                 <div></div>
@@ -151,16 +175,11 @@ function popup(page, index) {
   return str;
 }
 
-function desktopPopUp(page, index) {
-  let proj = page.desktopData[index];
-  let techLi = `<ul class="tech tags">
-    `;
-  for (let i = 0; i < proj.tech.length; i += 1) {
-    techLi += `<li><a href="#">${proj.tech[i]}</a></li>
-        `;
-  }
-  techLi += '</ul>';
-  const techUL = techLi;
+function desktopPopUp(page) {
+  let proj = page;
+  let techList = '';
+  for (let i = 0; i < proj.tech.length; i += 1)
+    techList += `<li><a href="#">${proj.tech[i]}</a></li>`;
 
   const str = `
     <section class="D-pop-card">
@@ -177,11 +196,13 @@ function desktopPopUp(page, index) {
         </div> 
         <img class="D-popup-cancel" id="D-close" src="./assets/IconCancelGray.svg" alt="cancel-icon">
         </div>
-    <img class="D-popup-img" src="${proj.image}" alt="Tonic" class="d-img">
+    <img class="D-popup-img" src="${proj.image.desktop}" alt="Tonic" class="d-img">
     <section class="D-h3and">
         <article class="article">${proj.article}</article>
         <div class="TnA">
-            ${techUL}
+          <ul class="tech tags">
+            ${techList}
+            </ul>
             <div class="line">
                 <div></div>
             </div>
@@ -213,16 +234,20 @@ const mobileSection = document.getElementById('cont');
 const desktopSection = document.getElementById('D-cont');
 const header = document.getElementById('header');
 const main = document.getElementById('main');
+const cards = document.getElementById('cards');
 
 // button cancel event checker. 
 let eventChecker = 0;
+
+cards.innerHTML = viewPage(pageData);
+
 
 for (let i = 0; i < buttons.length; i += 1) {
   buttons[i].addEventListener('click', () => {
     const previousScrollTop = (window.pageYOffset
     || document.documentElement.scrollTop || document.body.scrollTop || 0
     );
-    mobileSection.innerHTML = popup(pageData, i);
+    mobileSection.innerHTML = mobilePopUp(pageData[i]);
 
     mobileSection.style.display = 'flex';
     main.style.display = 'none';
@@ -246,7 +271,7 @@ for (let i = 0; i < buttons.length; i += 1) {
 
 for (let i = 0; i < buttons.length; i += 1) {
   buttons[i].addEventListener('click', () => {
-    desktopSection.innerHTML = desktopPopUp(pageData, i);
+    desktopSection.innerHTML = desktopPopUp(pageData[i]);
     if (window.innerWidth > 999) desktopSection.style.display = 'flex';
     main.style.display = 'none';
     header.style.display = 'none';
