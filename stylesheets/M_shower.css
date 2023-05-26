@@ -170,6 +170,7 @@ textarea {
   border-radius: 8px;
   border: none;
   padding: 12px;
+  resize: horizontal;
 }
 
 input[type="text"],

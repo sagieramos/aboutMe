@@ -86,6 +86,21 @@ const pageData =
       tech: ['html', 'Ruby on Rails', 'CSS', 'JavaScript'],
       liveLink: '#',
       sourceLink: 'https://github.com/sagieramos/'
+    },
+    {
+      name: 'Facebook 360',
+      company: 'FACEBOOK',
+      stack: 'Full Stack Dev',
+      year: '2015',
+      image: {
+        mobile: './assets/cards/card3.svg',
+        desktop: './assets/D_cards/D_card3.svg' 
+      },
+      intro: introduction,
+      article: DgeneralArticle,
+      tech: ['html', 'Ruby on Rails', 'CSS', 'JavaScript'],
+      liveLink: '#',
+      sourceLink: 'https://github.com/sagieramos/'
     }
   ];
 

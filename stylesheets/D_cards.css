@@ -1,7 +1,7 @@
 .cards {
   display: flex;
   flex-direction: column;
-  gap: 90px;
+  gap: 5vw;
   width: 100%;
   padding: 100px;
   margin: 0 auto;
@@ -80,8 +80,7 @@
   background: #ebebff;
 }
 
-.copyright li:first-child,
-.copyright li:nth-child(2) {
+.copyright li:first-child {
   list-style-type: none;
   font-weight: 500;
   font-size: 18px;
@@ -89,7 +88,7 @@
   color: #344563;
 }
 
-.copyright li:not(:first-child):not(:nth-child(2)) {
+.copyright li:not(:first-child) {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;

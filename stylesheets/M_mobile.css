@@ -31,10 +31,6 @@
 }
 
 main {
-  background-position-y: 50px;
-  background-image: url(../assets/header-shapes-mobile.svg);
-  background-repeat: repeat-y;
-  background-size: contain;
   background-color: #e5e5e5;
 }
 
