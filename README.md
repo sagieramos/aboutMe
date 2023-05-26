@@ -86,7 +86,7 @@ To run the project, execute the following command:
 - Twitter: [@sagieramos](https://twitter.com/sagieramos)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/sagieramos)
 
-👤 **Tegum Clarence**
+👤 **Tegum Clarence Atim**
 - GitHub: [@clarenceAtim](https://github.com/clarenceAtim)
 - Twitter: [@teclabliss](https://twitter.com/teclabliss)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/Tegumclarence)
