@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
 window.addEventListener('resize', handleWindowResize);
 
 document.addEventListener('DOMContentLoaded', () => {
-  const menuOptions = document.querySelectorAll('.menuList a');
+  const menuOptions = document.querySelectorAll('.menuListt a');
   for (let i = 0; i < menuOptions.length; i += 1) {
     menuOptions[i].addEventListener('click', handleMenuOptionClick);
   }
