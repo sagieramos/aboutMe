@@ -157,7 +157,7 @@ function mobilePopUp(page) {
                 ${proj.article}
             </p>
             <ul class="tags">
-                ${techList}     
+                ${techList} 
             </ul>
             <div class="line">
                 <div></div>
@@ -280,6 +280,9 @@ for (let i = 0; i < buttons.length; i += 1) {
 
 for (let i = 0; i < buttons.length; i += 1) {
   buttons[i].addEventListener('click', () => {
+    const previousScroll = (window.pageYOffset
+      || document.documentElement.scrollTop || document.body.scrollTop || 0
+      );
     desktopSection.innerHTML = desktopPopUp(pageData[i]);
     if (window.innerWidth > minWidth) desktopSection.style.display = 'flex';
     main.style.display = 'none';
@@ -294,6 +297,7 @@ for (let i = 0; i < buttons.length; i += 1) {
       main.style.display = 'block';
       header.style.display = 'block';
       mobileSection.style.display = 'none';
+      window.scrollTo(0, previousScroll);
     });
   });
 }

@@ -4,6 +4,10 @@
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0.1, 0);
   padding-top: 142px;
   padding-bottom: 166px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .aboutme li {
@@ -17,7 +21,6 @@
   align-items: flex-start;
   justify-content: space-around;
   gap: 10px;
-  margin: auto auto;
 }
 
 .aboutme-header {
