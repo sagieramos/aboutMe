@@ -157,7 +157,7 @@ function mobilePopUp(page) {
                 ${proj.article}
             </p>
             <ul class="tags">
-                ${techList};     
+                ${techList}     
             </ul>
             <div class="line">
                 <div></div>
