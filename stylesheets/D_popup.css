@@ -87,6 +87,29 @@
   font-size: 16px;
   line-height: 30px;
   color: #344563;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.article::-webkit-scrollbar {
+  width: 8px;
+}
+
+.article::-webkit-scrollbar-thumb {
+  background-color: #e5e5e5;
+  border-radius: 4px; 
+}
+
+.article::-webkit-scrollbar-thumb:hover {
+  background-color: #6070ff;
+}
+
+.article::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.article::-webkit-scrollbar {
+  width: 4px;
 }
 
 .action {

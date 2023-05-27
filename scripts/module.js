@@ -1,11 +1,5 @@
-const generalArticle = `
-Lorem Ipsum is simply dummy text of the printing and typesetting 
-industry. Lorem Ipsum has been the industry's standard dummy text 
-ever since the 1500s, when an unknown printer took a galley of type 
-and scrambled it to make a type specimen book. It has survived not 
-only five centuries, but also the leap into electronic typesetting, 
-remaining essent
-`;
+const maxWidth = 746;
+const minWidth = 747;
 
 const DgeneralArticle = `
 Lorem Ipsum is simply dummy text of the printing and typesetting 
@@ -213,7 +207,7 @@ function desktopPopUp(page) {
         </div>
     <img class="D-popup-img" src="${proj.image.desktop}" alt="Tonic" class="d-img">
     <section class="D-h3and">
-        <article class="article">${proj.article}</article>
+        <p class="article">${proj.article}</p>
         <div class="TnA">
           <ul class="tech tags">
             ${techList}
@@ -287,7 +281,7 @@ for (let i = 0; i < buttons.length; i += 1) {
 for (let i = 0; i < buttons.length; i += 1) {
   buttons[i].addEventListener('click', () => {
     desktopSection.innerHTML = desktopPopUp(pageData[i]);
-    if (window.innerWidth > 999) desktopSection.style.display = 'flex';
+    if (window.innerWidth > minWidth) desktopSection.style.display = 'flex';
     main.style.display = 'none';
     header.style.display = 'none';
     eventChecker = 0;
@@ -308,7 +302,7 @@ function showAppropriateSection() {
   if (eventChecker === 1) {
     void(0);
   }
-  else if (window.innerWidth < 1000) {
+  else if (window.innerWidth < maxWidth) {
     // Show mobile section
     mobileSection.style.display = 'block';
     // Hide desktop section
