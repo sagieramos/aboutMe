@@ -146,7 +146,6 @@
 }
 
 .form {
-  /* max-width: 569px; */
   max-width: 447px;
 }
 
@@ -170,6 +169,7 @@ textarea {
   border-radius: 8px;
   border: none;
   padding: 12px;
+  resize: none;
 }
 
 input[type="text"],

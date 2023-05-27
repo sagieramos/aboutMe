@@ -30,6 +30,9 @@ form.addEventListener('submit', function (event) {
         errorMsg.style.marginTop = '12px'
         errorMsg.style.float = 'left';
         errorMsg.style.borderRadius = '8px'
+        errorMsg.style.fontWeight = '500';
+        errorMsg.style.fontSize = '14px';
+        errorMsg.style.lineHeight = '24px';
         formSubmitBtn.parentNode.insertBefore(errorMsg, formSubmitBtn);
         // Clear the error message after a few seconds
         setTimeout(function () { 
