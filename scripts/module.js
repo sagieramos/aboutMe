@@ -40,8 +40,8 @@ const pageData =
       },
       intro: introduction,
       article: {
-        mobile: DgeneralArticle,
-        desktop: MgeneralArticle
+        desktop: DgeneralArticle,
+        mobile: MgeneralArticle
       },
       tech: ['html', 'Ruby on Rails', 'CSS', 'JavaScript'],
       liveLink: '#',
@@ -155,7 +155,7 @@ function viewPage(data) {
         <img class="d-img" src=${data[i].image.desktop} alt="Tonic" class="d-img">
         <div class="card-container">
             <div class="card-header">
-                <h2>Tonic</h2>
+                <h2>${data[i].name}</h2>
                 <ul class="copyright">
                     <li>${data[i].company}</li>
                     <li>${data[i].stack}</li>
