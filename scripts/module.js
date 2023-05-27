@@ -1,6 +1,14 @@
 const maxWidth = 746;
 const minWidth = 747;
 
+const MgeneralArticle = `
+Lorem Ipsum is simply dummy text of the printing and typesetting 
+industry. Lorem Ipsum has been the industry's standard dummy text 
+ever since the 1500s, when an unknown printer took a galley of type and 
+scrambled it to make a type specimen book. It has survived not only five 
+centuries, but also the leap into electronic typesetting, remaining essent
+`
+
 const DgeneralArticle = `
 Lorem Ipsum is simply dummy text of the printing and typesetting 
 industry. Lorem Ipsum has been the industry's standard dummy text 
@@ -22,6 +30,24 @@ no accounts or sign-ups required.
 const pageData = 
   [
     {
+      name: 'Energy Monitor & Control',
+      company: 'Imuwahen',
+      stack: 'Electronics',
+      year: '2020',
+      image: {
+        mobile: './imuwahen_logo.png',
+        desktop: './imuwahen_logo.png' 
+      },
+      intro: introduction,
+      article: {
+        mobile: DgeneralArticle,
+        desktop: MgeneralArticle
+      },
+      tech: ['html', 'Ruby on Rails', 'CSS', 'JavaScript'],
+      liveLink: '#',
+      sourceLink: 'https://github.com/sagieramos/'
+    },
+    {
       name: 'Tonic',
       company: 'CANOPY',
       stack: 'Back End Dev',
@@ -31,7 +57,10 @@ const pageData =
         desktop: './assets/D_cards/D_card1.svg' 
       },
       intro: introduction,
-      article: DgeneralArticle,
+      article: {
+        desktop: DgeneralArticle,
+        mobile: MgeneralArticle
+      },
       tech: ['html', 'CSS', 'JavaScript', 'Ruby', 'Bootstrap'],
       liveLink: '#',
       sourceLink: 'https://github.com/sagieramos/'
@@ -46,7 +75,10 @@ const pageData =
         desktop: './assets/D_cards/D_card2.svg' 
       },
       intro: introduction,
-      article: DgeneralArticle,
+      article: {
+        desktop: DgeneralArticle,
+        mobile: MgeneralArticle
+      },
       tech: ['html', 'Ruby on Rails', 'CSS', 'JavaScript'],
       liveLink: '#',
       sourceLink: 'https://github.com/sagieramos/'
@@ -61,7 +93,10 @@ const pageData =
         desktop: './assets/D_cards/D_card3.svg' 
       },
       intro: introduction,
-      article: DgeneralArticle,
+      article: {
+        desktop: DgeneralArticle,
+        mobile: MgeneralArticle
+      },
       tech: ['html', 'Ruby on Rails', 'CSS', 'JavaScript'],
       liveLink: '#',
       sourceLink: 'https://github.com/sagieramos/'
@@ -76,7 +111,10 @@ const pageData =
         desktop: './assets/D_cards/D_card4.svg' 
       },
       intro: introduction,
-      article: DgeneralArticle,
+      article: {
+        mobile: DgeneralArticle,
+        desktop: MgeneralArticle
+      },
       tech: ['html', 'Ruby on Rails', 'CSS', 'JavaScript'],
       liveLink: '#',
       sourceLink: 'https://github.com/sagieramos/'
@@ -91,7 +129,10 @@ const pageData =
         desktop: './assets/D_cards/D_card3.svg' 
       },
       intro: introduction,
-      article: DgeneralArticle,
+      article: {
+        desktop: DgeneralArticle,
+        mobile: MgeneralArticle
+      },
       tech: ['html', 'Ruby on Rails', 'CSS', 'JavaScript'],
       liveLink: '#',
       sourceLink: 'https://github.com/sagieramos/'
@@ -154,7 +195,7 @@ function mobilePopUp(page) {
         <img class="m-img" src="${proj.image.mobile}" alt="Tonic">
         <article class="card-container">
             <p class="content">
-                ${proj.article}
+                ${proj.article.mobile}
             </p>
             <ul class="tags">
                 ${techList} 
@@ -207,7 +248,7 @@ function desktopPopUp(page) {
         </div>
     <img class="D-popup-img" src="${proj.image.desktop}" alt="Tonic" class="d-img">
     <section class="D-h3and">
-        <p class="article">${proj.article}</p>
+        <p class="article">${proj.article.desktop}</p>
         <div class="TnA">
           <ul class="tech tags">
             ${techList}
