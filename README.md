@@ -52,7 +52,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://sagieramos.github.io/aboutMe/)
+- [Live Demo Link](https://drive.google.com/file/d/1iJQAhA4CGsiZ7n4WcWVBIDlUwgvtlmiC/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -85,11 +85,6 @@ To run the project, execute the following command:
 - GitHub: [@sagieramos](https://github.com/sagieramos)
 - Twitter: [@sagieramos](https://twitter.com/sagieramos)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/sagieramos)
-
-👤 **Tegum Clarence Atim**
-- GitHub: [@clarenceAtim](https://github.com/clarenceAtim)
-- Twitter: [@teclabliss](https://twitter.com/teclabliss)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/Tegumclarence)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
